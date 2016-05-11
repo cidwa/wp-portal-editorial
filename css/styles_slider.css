@@ -1,0 +1,90 @@
+*{
+	padding: 0;
+	margin: 0;
+}
+/* Quite el aire de las orillas para ajustar al header
+y cambie porcentajes para ajustar medidas
+Comentado por Fausto 28/02/2016*/
+.seccion{
+    
+	/*width: 90%; 28/02/2016*/
+    width: 100%;
+	height: 100%;
+    /* margin: 0% 5%; 28/02/2016*/
+    margin: 0% 0%;
+	display: flex;
+	justify-content: space-between;
+
+}
+.menu{
+	width: 100%;
+	height: 60%;
+}
+.publicidad{
+	width: 100%;
+	height: 35%;
+}
+
+.box{
+    /*width: 20%; 28/02/2016*/
+    width: 25%;
+	height: 98%%;
+	margin-top: 2%;
+}
+.menu li{
+	list-style: none;
+	text-decoration: underline;
+	text-decoration: none;
+	width: 100%;
+	height: 12.5%;
+
+}
+.categoria{
+	background-color: #ef2a2a;
+	color: white;
+	padding-left: 5%;
+	font-size: 19px;
+	text-transform: uppercase;
+	display: flex;
+	align-content: center;
+	padding-top: 5%;
+	font-weight: bold;
+	border-color: #cccccc;
+}
+.left-menu{
+	padding-left: 5%;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-bottom: solid 1px;
+	display: flex;
+	align-content: center;
+	padding-top: 5%;
+	font-weight: bold;
+	border-color: #cccccc;
+
+}
+.left-menu1{
+	padding-left: 5%;
+	font-size: 12px;
+	text-transform: uppercase;
+	border-bottom: solid 1px;
+	display: flex;
+	justify-content: space-between;
+	padding-right: 5%;
+	padding-top: 5%;
+	font-weight: bold;
+	border-color: #cccccc;
+
+}
+.left-menu1:hover {
+	color: #ef2a2a;
+}
+.left-menu:hover {
+	color: #ef2a2a;
+}
+@media (max-width: 800px) {
+	.box{
+		display: none;
+	}
+
+}
