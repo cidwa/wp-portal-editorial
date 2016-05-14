@@ -106,10 +106,10 @@
         <div class="container">
             <div title="Logo" class="row">
                 <div class="col-md-2">
-                    <img src="<?php echo get_template_directory_uri();?>/http://www.libros.unam.mx/media//unaam-u.png" alt="" class="img img-responsive">
+                    <img src="<?php echo get_template_directory_uri();?>/img/unaam-u.jpg" alt="" class="img img-responsive">
                 </div>
                 <div class="col-md-2 super">
-                    <img src="<?php echo get_template_directory_uri();?>/http://www.libros.unam.mx/media//libunam.png" alt="" class="img img-responsive">
+                    <img src="<?php echo get_template_directory_uri();?>/img/libunam.jpg" alt="" class="img img-responsive">
                 </div>
             </div>
         </div>

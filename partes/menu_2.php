@@ -11,6 +11,6 @@
                 <li class="left-menu">Contacto</li>
             </ul>
 
-            <img src="slider/assets/publicidad.jpg" class="img img-responsive">
+            <img class="third-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/publicidad.jpg" alt="">
 
         </div>
