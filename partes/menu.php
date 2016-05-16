@@ -1,133 +1,97 @@
-<!--Walter segundo menu-->
-<div class="container">
-    <nav class="navbar navbar-default navbar-principal ">
-        <div class="container-fluid">
-            <ul class="menu_principal">
 
-
-                <ul class="nav navbar-nav">
-                    <li><a href="#">NUESTROS LIBROS</a></li>
-
-                    <li class="btn-group">
-                        <a href="#" class=" dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">ÁREA TEMÁTICA <b class="caret"></b>
-                                    </a>
-
-                        <div class="container dropdown-menu" id="tabla-container">
-                            <table class="table">
-                                <tbody>
-                                    <tr>
-                                        <td>
-                                            <a href="">> Estudios de Posgrado</a>
-                                        </td>
-                                        <td>
-                                            <a href="">> Investigación Aplicada y Multidiciplinaria</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">> Ciencias Juridicas</a>
-                                        </td>
-
-                                        <td>
-                                            <a href="">> Ciencias Socioeconómicas</a>
-                                        </td>
-                                    </tr>
-                                    <tr>
-                                        <td>
-                                            <a href="">> Diseño y Edificación</a>
-                                        </td>
-                                        <td><a href="">> Humanidades</a></td>
-                                    </tr>
-                                    <tr>
-
-                                        <td> <a href="">> Matematicás e ingeniería </a>
-                                        </td>
-                                        <td>
-                                            <a href="">> Universidad Abierta y Educación a Distancia </a>
-                                        </td>
-
-                                    </tr>
-                                    <tr>
-
-
-                                        <td> <a href="">> Enseñanza de Idiomas</a>
-                                        </td>
-                                        <td><a href="">> Divulgación Cientifica</a>
-                                        </td>
-                                    </tr>
-
-
-                                </tbody>
-
-                            </table>
-                        </div>
-
-                    </li>
-
-                    <li><a href="#">E-BOOKS</a></li>
-                    <li><a href="#">EVENTOS</a></li>
-
-                    <li><a href="#">BLOG</a></li>
-                    <li><a href="#">CONTACTO</a></li>
-                </ul>
-
-
-
-                <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="  search-query form-control" placeholder="Buscar en toda la tienda" />
-                        <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                </div>
-
-
-                <!--MENÚ DE TOGGLE,en dispositivos moviles -->
-
+    <!--Primer menu de navegación por Cairo -->
+    <header>
+        <div class="container-fluid super visible-lg-block visible-md-block">
+            <nav class="navbar navbar-inverse top-links navbar-default">
                 <div class="container-fluid">
-                    <div class="menu_toggle">
-                        <i class="fa fa-bars fa-2x toggle-btn" data-toggle="collapse" data-target="#menu-toggle-content"></i>
+                    <div class="navbar-header collapsed navbar-toggle text-center icono-collaps">
+                        <ul class="navbar-nav list-inline">
+                            <li class="resp">
+                                <a title="mi cuenta" href="#">
+                                    <span class="glyphicon glyphicon-user iconos resp1"></span>
+                                </a>
+                            </li>
+                            <li class="resp">
+                                <a title="Lista de Deseos" href="#">
+                                    <span class="glyphicon glyphicon-heart-empty iconos resp1"></span>
+                                </a>
+                            </li>
+                            <li class="resp">
+                                <a title="Blog" href="#">
+                                    <span class="glyphicon glyphicon-comment iconos resp1"></span>
 
-                        <div class="menu-toggle-list">
+                                </a>
+                            </li>
+                            <li class="resp">
+                                <a class="clicker" title="Libros UNAM">
+                                    <span class="glyphicon glyphicon-file iconos resp1"></span>
 
-                            <ul id="menu-toggle-content" class="menu-toggle-content out collapse ">
+                                </a>
+                                <ul></ul>
+                            </li>
+                            <li class="loggin resp">
+                                <a href="#">
+                                    <span class="glyphicon glyphicon-off iconos resp1"></span>
+                                </a>
+                            </li>
+                        </ul>
 
-                                <li>NUESTROS LIBROS</li>
-
-                                <li data-toggle="collapse" data-target="#area-tematica" class="collapsed">
-                                    ÁREA TEMÁTICA <span class="glyphicon glyphicon-plus"></span>
-                                </li>
-
-                                <ul class="sub-menu collapse" id="area-tematica">
-                                    <li>Estudios de Posgrado</li>
-                                    <li>diseño y edificacion</li>
-                                    <li>Matemáticas e ingeniería</li>
-                                    <li>enseñansa de idiomas</li>
-                                    <li>siencias socioeconomicas</li>
-                                    <li>humanidades</li>
-                                    <li>universidad abierta y educacion a distancia</li>
-                                    <li>investigacion aplicada y multidisiplinaria</li>
-                                    <li>divulgación cientifica</li>
+                    </div>
+                    <div class="collapse navbar-collapse nav-stacked" id="bs-example-navbar-collapse-1" aria-expanded="true">
+                        <ul class="nav navbar-nav bienvenida">
+                            <!--<li class="dropdown">
+                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">MX <span class="caret"></span></a>
+                                <ul class="dropdown-menu">
+                                    <li><a href="#">US$-USD</a></li>
+                                    <li class="divider"></li>
+                                    <li><a href="#">MXN$-MX</a></li>
                                 </ul>
+                            </li>-->
+                            <a href="#" class="navbar-brand welcome-msg">¡Bienvenido a Libros Acatlán!</a>
+                        </ul>
+
+                        <ul class="nav navbar-nav navbar-right">
+                            <li class="lista">
+                                <a title="mi cuenta" href="#" class="overscroll">
+                                    <span class="glyphicon glyphicon-user iconos"></span>
+                                    <span>Mi cuenta</span>
+                                </a>
+                            </li>
+                            <li class="lista">
+                                <a title="Lista de Deseos" href="#" class="overscroll">
+                                    <span class="glyphicon glyphicon-heart-empty iconos "></span>
+                                    <span>Mi lista de Deseos</span>
+                                </a>
+                            </li>
 
 
-                                <li><a href="#">E-BOOKS</a></li>
-                                <li><a href="#">EVENTOS</a></li>
-                                <li><a href="#">BLOG</a></li>
-                                <li>CONTACTO</li>
-
-
-                            </ul>
-                        </div>
+                            <li class="lista">
+                                <a title="Blog" href="#" class="overscroll">
+                                    <span class="glyphicon glyphicon-comment iconos"></span>
+                                    <span>Blog</span>
+                                </a>
+                            </li>
+                            <li class="lista">
+                                <a title="Libros UNAM" class="overscroll">
+                                    <span class="glyphicon glyphicon-file iconos"></span>
+                                    <span>Libros UNAM</span>
+                                </a>
+                                <ul></ul>
+                            </li>
+                            <li class="lista">
+                                <a href="#" class="overscroll">
+                                    <span class="glyphicon glyphicon-off iconos"></span>
+                                    <span>Inicio de sesión</span>
+                                </a>
+                            </li>
+                        </ul>
                     </div>
                 </div>
-            </ul>
+            </nav>
         </div>
-    </nav>
+        
+        
+        
 
-</div>
-<!--//Walter segundo menu-->
-</header>
+
+        
