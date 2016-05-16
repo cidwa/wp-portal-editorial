@@ -13,6 +13,7 @@ function the_content ( string $more_link_text = null, bool $strip_teaser = false
 }
 ```
 *Parametros*
+
 $more_link_text
 
     (string) (Opcional) Contenido para cuando hay más texto.
