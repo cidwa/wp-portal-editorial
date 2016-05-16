@@ -1,4 +1,4 @@
-# wp-portal-editorial
+﻿# wp-portal-editorial
 
 ##Eventos
 ### Para la implementación del post se pueden generar con [Generate WP](https://generatewp.com/post-type/)
@@ -24,6 +24,5 @@ $strip_teaser
 
     (bool) (Optional) El valor inicial es falso
 
-    Valor inicial: falso
-
+    Valor inicial: falso.
 
