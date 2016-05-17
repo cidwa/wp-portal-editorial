@@ -4,6 +4,7 @@ div.container-fluid a:hover {
     color: white !important;
 }
 
+
 .botton-hamburguer {
     width: 50px;
     height: 50px;
@@ -24,18 +25,31 @@ div.nav-menu-principal {
 nav.navbar-principal ul.container {
     padding: 0px;
     margin: 0px;
+   
 }
-
-div.nav-menu-principal >ul.navbar-nav>li>a {
-    color: #333;
+div.nav-menu-principal >ul.navbar-nav>li>a{
+    color: #333 ;
 }
-
-div.nav-menu-principal >ul.navbar-nav>li {
+div.nav-menu-principal >ul.navbar-nav>li{
     border-right: 1px solid #d4d3d3;
 }
-
-
-
+ul.dropdown-menu {
+    width: 1070px;
+    height: auto;
+    left: -130px;
+}
+ul.dropdown-menu li {
+    display: inline-block;
+    width: 530px;
+    height: 70px;
+}
+ul.dropdown-menu >li >a{
+    width: 490px;
+    height: 70px;
+    align-content: center;
+    padding-left: 30%;
+    padding-top: 5%;
+}
 nav.navbar-principal {
     background-color: transparent;
     border-bottom: 4px solid #101010 !important;
@@ -45,14 +59,15 @@ nav.navbar-principal {
     margin: 0px;
     margin-bottom: 15px;
     font-weight: bold;
+    
 }
 
-#bs-example-navbar > li.dropdown > a.dropdown-toggle >span {
-    visibility: hidden;
+#bs-example-navbar > li.dropdown > a.dropdown-toggle >span{
+visibility: hidden;
 }
-
-ul.container ul li {
+ul.container ul li{
     color: blue !important;
+
 }
 
 nav.navbar-principal > div {
@@ -153,19 +168,22 @@ table.table>tfoot>tr>th {
         visibility: visible;
         display: inline-block;
     }
+    
     nav.navbar-principal {
         padding-bottom: 5px;
     }
+    
+    
     .navbar-collapse.collapse {
         display: none!important;
     }
     .collapse.in {
         display: block !important;
     }
-    #bs-example-navbar > li.dropdown > a.dropdown-toggle >span {
-        float: right;
+    #bs-example-navbar > li.dropdown > a.dropdown-toggle >span{
+    float: right;
         visibility: visible;
-    }
+}
     #custom-search-input {
         /*barra de busqueda  */
         margin: 0;
@@ -174,26 +192,6 @@ table.table>tfoot>tr>th {
         width: 300px;
         height: 30%;
         float: right;
-    }
-}
-
-@media (min-width: 1200px) {
-    ul.dropdown-menu {
-        width: 1000px;
-        height: 300px;
-        left: -150px;
-    }
-    ul.dropdown-menu li {
-        display: inline-block;
-        width: 490px;
-        height: 70px;
-    }
-    ul.dropdown-menu >li >a {
-        width: 490px;
-        height: 70px;
-        align-content: center;
-        padding-left: 30%;
-        padding-top: 5%;
     }
 }
 
