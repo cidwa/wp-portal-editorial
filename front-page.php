@@ -1,19 +1,7 @@
 <?php
 get_header();
 ?>
-    <div class="container">
-        <section class="row">
-            <div class="col-lg-3 col-md-3 col-sm-3">
-               <?php get_template_part("partes/menu_2"); ?>
-            </div>
-            <div class="col-lg-9 col-md-9 col-sm-9">
-               <div>
-               <!--SLider-->
-               <?php get_template_part("partes/slider"); ?>
-               </div>
-            </div>
-        </section>
-    </div>
+    
     <!--//Slider de Diego-->
     <div class="container espacio">
         <div class="row">

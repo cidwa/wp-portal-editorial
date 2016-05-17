@@ -116,5 +116,7 @@
 
         <!--//Primer menu de navegación por Cairo -->
         <br>
-        <?php get_template_part("partes/menu"); ?>
+        <div class="container">
+                    <?php get_template_part("partes/menu_2"); ?>
 
+        </div>
