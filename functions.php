@@ -11,18 +11,19 @@ function cargar_css_del_tema(){
     wp_enqueue_style( 'styles_slider', get_stylesheet_directory_uri(). '/css/styles_slider.css' );
     wp_enqueue_style( 'styles-navbar-toggle', get_stylesheet_directory_uri(). '/css/styles-navbar-toggle.css' );
     wp_enqueue_style( "styles-header", get_stylesheet_directory_uri(). "/css/styles-header.css" );
+    wp_enqueue_style( "light", get_stylesheet_directory_uri(). "/css/light.css" );
 }
 
  function cargar_js_del_tema(){
-   wp_enqueue_script("jquery", get_stylesheet_directory_uri()."/js/jquery.js");
-   wp_enqueue_script("bootstrap", get_stylesheet_directory_uri()."/js/bootstrap.min.js");
+    wp_enqueue_script("jquery", get_stylesheet_directory_uri()."/js/jquery.js");
+    wp_enqueue_script("bootstrap", get_stylesheet_directory_uri()."/js/bootstrap.min.js");
     wp_enqueue_script("bootstrap-hover-dropdown", get_stylesheet_directory_uri()."/js/bootstrap-hover-dropdown.min.js");    
     wp_enqueue_script("jcarousel", get_stylesheet_directory_uri()."/js/jquery.jcarousel.min.js");    
     wp_enqueue_script("bryan-body2", get_stylesheet_directory_uri()."/js/bryan-body2.js");
-
- 
- 
- }
+    wp_enqueue_script("mityped", get_stylesheet_directory_uri()."/js/mityped.js");
+    wp_enqueue_script("npm", get_stylesheet_directory_uri()."/js/npm.js");
+    wp_enqueue_script("typed", get_stylesheet_directory_uri()."/js/typed.js");
+}
 add_action("wp_enqueue_scripts","cargar_js_del_tema");
  add_action("wp_enqueue_scripts","cargar_css_del_tema");
 
