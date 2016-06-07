@@ -47,7 +47,18 @@ footer li {
 }
 .footer2 {
     background: #282828;
-    color: #666666;
+    color: #aaaaaa;
+    font-size: 13px;
+}
+.footer2 a {
+    color: #4c6cd8;
+}
+.footer2 a:hover, a:focus{
+
+    color: #d3430e;
+}
+.footer3 {
+    margin-top: -10px;
 }
 
 @media screen and (max-width: 768px) {
