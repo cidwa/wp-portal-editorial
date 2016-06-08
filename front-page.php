@@ -1,34 +1,83 @@
 <?php
 get_header();
 ?>
-    <!--//Slider de Diego-->
-    <div class="container espacio">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-12 ">
-                <div class="fondo1">
-                    <div class="margen">
-                        <h2>NOVEDADES</h2>
+    <!--Slider de Diego-->
+    <div class="container">
+        <section class="row">
+            <div class="col-sm-2"></div>
+            <div class=" col-sm-8">
+                <div>
+                    <!--SLider-->
+                    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+                        <!-- Indicators -->
+                        <ol class="carousel-indicators">
+                            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+                            <li data-target="#myCarousel" data-slide-to="1"></li>
+                            <li data-target="#myCarousel" data-slide-to="2"></li>
+                            <li data-target="#myCarousel" data-slide-to="3"></li>
+                            <li data-target="#myCarousel" data-slide-to="4"></li>
+                        </ol>
+                        <div class="carousel-inner" role="listbox">
+                            <div class="item active">
+                                <img class="first-slide" src="<?php echo get_template_directory_uri();?>slider/assets/1.jpg" alt="Tema">
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="second-slide" src="<?php echo get_template_directory_uri();?>slider/assets/2.jpg" alt="Pollo">
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/3.jpg" alt="Pescado">
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/4.jpg" alt="Pescado">
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="item">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/5.jpg" alt="Pescado">
+                                <div class="container">
+                                    <div class="carousel-caption">
+
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+                            <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                            <span class="sr-only">Previous</span>
+                        </a>
+                        <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+                            <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                            <span class="sr-only">Next</span>
+                        </a>
                     </div>
+                    <!-- /.carousel -->
                 </div>
             </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="fondo2">
-                    <div class="margen">
-                        <h2>LIBROS DEL MES</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="fondo3">
-                    <div class="margen">
-                        <h2>EVENTOS</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
+            <div class="col-sm-2"></div>
+        </section>
     </div>
-<!---- Primera parte ---->
- <div class="container">
+    <!--//Slider de Diego-->
+
+    <!--Empieza la sección de Bryan-->
+    <div class="container espacio-bl">
         <div class="col-md-12">
             <div class=" titulo row">
                 <h3 class="col-md-10 col-sm-10 col-xs-8">Libros del Mes</h3>
@@ -40,7 +89,7 @@ get_header();
             <div class="row">
                 <div class="jcarousel">
                     <ul>
-                        <li class="col-lg-3 col-xs-6 col-sm-4 col-md-3">
+                        <li class="col-xs-6 col-sm-4 col-md-3">
                             <div class="thumbnail">
                                 <div id="uno" class="imagen">
                                     <div class="mask-slider">
@@ -50,13 +99,7 @@ get_header();
                                 <div class="caption">
                                     <h4 class="subtitulo">Jóvenes cuentacuentos en la librería Jaime García Terrés</h4>
                                     <p>MXN $0</p>
-                                    <p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </p>
+
                                 </div>
                             </div>
                         </li>
@@ -71,13 +114,7 @@ get_header();
                                 <div class="caption">
                                     <h4 class="subtitulo">Jóvenes cuentacuentos en la librería Jaime García Terrés</h4>
                                     <p>MXN $0</p>
-                                    <p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </p>
+
                                 </div>
                             </div>
                         </li>
@@ -92,13 +129,7 @@ get_header();
                                 <div class="caption">
                                     <h4 class="subtitulo">Jóvenes cuentacuentos en la librería Jaime García Terrés</h4>
                                     <p>MXN $0</p>
-                                    <p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </p>
+
                                 </div>
                             </div>
                         </li>
@@ -113,13 +144,7 @@ get_header();
                                 <div class="caption">
                                     <h4 class="subtitulo">Jóvenes cuentacuentos en la librería Jaime García Terrés</h4>
                                     <p>MXN $0</p>
-                                    <p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </p>
+
                                 </div>
                             </div>
                         </li>
@@ -134,13 +159,7 @@ get_header();
                                 <div class="caption">
                                     <h4 class="subtitulo">Jóvenes cuentacuentos en la librería Jaime García Terrés</h4>
                                     <p>MXN $0</p>
-                                    <p>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                        <span class="glyphicon glyphicon-star"></span>
-                                    </p>
+
                                 </div>
                             </div>
                         </li>
@@ -150,9 +169,9 @@ get_header();
             </div>
         </div>
     </div>
-  
+    <!--//termina la seccion 2 de bryan-->
 
-    <!----------------Ultimas noticia ------------------>
+    <!--Sección 4 de bryan -->
     <div class="container">
         <div class="col-md-12">
             <div class=" titulo row">
@@ -217,5 +236,62 @@ get_header();
                 </div>
 
             </div>
+
+
+        </div>
+    </div>
+    <!--//Sección 4 de bryan-->
+    <br>
+
+    <footer class="container-fluid">
+        <div class="row aire">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <!--Columna 2-->
+                <h4>Lineamiento</h4>
+                <ul>
+                    <li class="espli">&gt; <a href="comite-editorial-interno.html">Comite Editorial interno</a></li>
+                    <li class="espli">&gt; <a href="comite-editorial.html">Comite editorial</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <!--Columna 3-->
+                <h4>Integración</h4>
+                <ul>
+                    <li class="espli">&gt; <a href="integracion.html">Integración</a></li>
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <!--Columna 4-->
+                <h4>Sistema</h4>
+                <ul>
+                    <li class="espli">&gt; <a href="http://sistemas.acatlan.unam.mx/publicaciones/">Sistema</a></li>
+
+                </ul>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
+                <aside>
+                    <h4>Siguenos en:</h4>
+                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="img/facebook.png" width=32 height=32 /></a>
+
+                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
+
+                </aside>
+            </div>
+
+        </div>
+    </footer>
+
+    <div class="container-fluid">
+        <div class="row footer2">
+
+
+            <p class="text-center">Hecho en México, todos los derechos reservados 2016. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución. <a href="creditos.html">Créditos</a></p>
+            <div class="footer3">
+                <p class="text-center">Sitio Web Administrado por el Departamento de Servicio de Computo</p>
+            </div>
+
+
+        </div>
+    </div>
  <!----Para cuando este el footer--->   
  <?php get_footer(); ?>
