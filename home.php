@@ -1,7 +1,19 @@
-<?php
- get_header();
-?>
-    
-<?php
- get_footer();
-?>
+<?php get_header(); ?>
+
+    <div id="conteiner">
+        
+    </div>
+
+
+
+
+<?php get_footer(); ?>
+
+
+
+
+
+
+
+
+
