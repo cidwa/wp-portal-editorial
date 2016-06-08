@@ -243,55 +243,6 @@ get_header();
     <!--//Sección 4 de bryan-->
     <br>
 
-    <footer class="container-fluid">
-        <div class="row aire">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 2-->
-                <h4>Lineamiento</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="comite-editorial-interno.html">Comite Editorial interno</a></li>
-                    <li class="espli">&gt; <a href="comite-editorial.html">Comite editorial</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 3-->
-                <h4>Integración</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="integracion.html">Integración</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 4-->
-                <h4>Sistema</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="http://sistemas.acatlan.unam.mx/publicaciones/">Sistema</a></li>
-
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <aside>
-                    <h4>Siguenos en:</h4>
-                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="img/facebook.png" width=32 height=32 /></a>
-
-                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
-
-                </aside>
-            </div>
-
-        </div>
-    </footer>
-
-    <div class="container-fluid">
-        <div class="row footer2">
-
-
-            <p class="text-center">Hecho en México, todos los derechos reservados 2016. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución. <a href="creditos.html">Créditos</a></p>
-            <div class="footer3">
-                <p class="text-center">Sitio Web Administrado por el Departamento de Servicio de Computo</p>
-            </div>
-
-
-        </div>
-    </div>
+    
  <!----Para cuando este el footer--->   
  <?php get_footer(); ?>
