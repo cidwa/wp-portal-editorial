@@ -19,7 +19,7 @@ get_header();
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="first-slide" src="<?php echo get_template_directory_uri();?>slider/assets/1.jpg" alt="Tema">
+                                <img class="first-slide" src="<?php echo get_template_directory_uri();?>/img/slider1.jpg" alt="Tema">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -27,7 +27,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="second-slide" src="<?php echo get_template_directory_uri();?>slider/assets/2.jpg" alt="Pollo">
+                                <img class="second-slide" src="<?php echo get_template_directory_uri();?>/img/slider2.jpg" alt="Pollo">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -35,7 +35,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/3.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/img/slider3.jpg" alt="Pescado">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -43,7 +43,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/4.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/img/slider4.jpg" alt="Pescado">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -51,7 +51,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>slider/assets/5.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/img/slider5.jpg" alt="Pescado">
                                 <div class="container">
                                     <div class="carousel-caption">
 
