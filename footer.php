@@ -26,9 +26,9 @@
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
                 <aside>
                     <h4>Siguenos en:</h4>
-                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="<?php echo get_template_directory_uri();?>img/facebook.png" width=32 height=32 /></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="<?php echo get_template_directory_uri();?>/img/facebook.png" width=32 height=32 /></a>
 
-                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="<?php echo get_template_directory_uri();?>img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
+                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="<?php echo get_template_directory_uri();?>/img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
 
                 </aside>
             </div>
@@ -50,11 +50,6 @@
     </div>
 
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-hover-dropdown/2.2.1/bootstrap-hover-dropdown.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
-    <script src="js/jquery.jcarousel.min.js"></script>
-    <script src="js/bryan-body2.js"></script>
     <?php wp_footer(); ?>
 </body>
 
