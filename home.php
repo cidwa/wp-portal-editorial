@@ -1,7 +1,8 @@
 <?php
 get_header();
+the_post(); //Pueda recibir los posts. 
 ?>
-    <div class="container">
+    <header class="container">
        <div class="row">
            <div class="col-lg-12">
                <h2 class="media-heading">Noticias</h2>
@@ -10,56 +11,57 @@ get_header();
        </div>
        <div class="row">
            <div class="col-lg-12">
-               <img src="<?php echo get_template_directory_uri();?>/img/banner.jpg" alt="Slider-3" class="img-responsive">
+               <img class="img img-responsive" src="<?php echo get_template_directory_uri();?>img/banner.jpg" alt="Slider-3">
            </div>
        </div>
-    </div>
+    </header>
     
     <br><br><br>
-    
+
+<div id="noticias">
+                <?php
+                $args = array(
+                  'post_type' =>'post',
+                  'posts_per_page' =>'-1'
+              );
+                  // the query
+                      $the_query = new WP_Query( $args ); ?>
+
+                      <?php if ( $the_query->have_posts() ) : ?>
+
+                      <!-- pagination here -->
+
+                      <!-- the loop -->
+                       <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+
     <div class="container">
         <div class="row">
             <div class="col-lg-9">
                 <div class="media">
   <div class="col-sm-3 col-md-3 col-xs-12">
     <a href="#">
-      <img src="<?php echo get_template_directory_uri();?>/img/blog-1.jpg" alt="Bootstrap" class="media-object img img-responsive">
+      <img class="media-object" src="<?php echo get_template_directory_uri();?>img/blog-1.jpg" alt="Bootstrap" class="img img-responsive">
     </a>
   </div>
   <div class="col-sm-1"></div>
   <div class="col-sm-8 col-md-9 col-xs-12">
-    <h4 class="text-justify">Una pequeña reseña de mi nuevo libro</h4>
-     <h5 class="text-warning">2 de Mayo 2016 - <small class="text-danger">Parra Toledo Araceli </small></h5>
-    <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, placeat dolore minus beatae sed. Sapiente inventore mollitia, autem temporibus velit dolore, repudiandae voluptates quo facilis non a facere veniam maiores.</span>
-    <span>Rerum maiores deleniti quas corrupti id repellat consequatur quos? Voluptatibus at quidem sint tempora illum optio molestiae totam dolore, unde provident libero aliquam, beatae assumenda itaque error quasi blanditiis minima.</span>
-    <span>Alias asperiores, eos reprehenderit. Repudiandae sequi dolorum laudantium, corporis ipsam impedit incidunt veritatis officiis, harum ea animi excepturi consectetur iure tenetur assumenda delectus amet nisi dolorem! Culpa illo iusto eum.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consectetur, mollitia, minima necessitatibus possimus sint, dolorum laborum sed reprehenderit velit, cum suscipit laudantium quia? Quibusdam autem totam sint iste est.</span><a href="#" class="btn btn-link">Ver más</a></p>
+    <h4 class="text-justify"><?php the_title(); ?></h4>
+    <h5 class="text-warning"><?php echo get_the_date(); ?><small class="text-danger"><?php the_author(); ?></small></h5>
+    <?php the_excerpt(); ?>
+    <div class=" col-lg-offset-10"><a href="<?php the_permalink();?>"><buttom class="btn btn-link">Ver más</buttom></a></div>
   </div>
-  
+
+  <?php endwhile; ?>
+  <?php wp_reset_postdata(); ?>
+  <?php else : ?>
+    <p><?php _e('Lo sentimos, no se encontro el Post.'); ?></p>
+  <?php endif; ?>
+  <br>
+  </div>
   <br>
   <br>
-  <br>
-  <div class="col-sm-3 col-md-3 col-xs-12">
-    <a href="#">
-       <img src="<?php echo get_template_directory_uri();?>/img/go.jpg" alt="Bootstrap" class="media-object img img-responsive">
-    </a>
-  </div>
-   <div class="col-sm-1"></div>
-  <div class="col-sm-8 col-md-9 col-xs-12">
-    <h4 class="media-heading text-justify">Una pequeña reseña de mi nuevo libro</h4>
-    <h5 class="text-warning">23 de Abril 2016 - <small class="text-danger">Parra Toledo Araceli </small></h5>
-    <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, placeat dolore minus beatae sed. Sapiente inventore mollitia, autem temporibus velit dolore, repudiandae voluptates quo facilis non a facere veniam maiores.</span>
-    <span>Rerum maiores deleniti quas corrupti id repellat consequatur quos? Voluptatibus at quidem sint tempora illum optio molestiae totam dolore, unde provident libero aliquam, beatae assumenda itaque error quasi blanditiis minima.</span>
-    <span>Alias asperiores, eos reprehenderit. Repudiandae sequi dolorum laudantium, corporis ipsam impedit incidunt veritatis officiis, harum ea animi excepturi consectetur iure tenetur assumenda delectus amet nisi dolorem! Culpa illo iusto eum.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consectetur, mollitia, minima necessitatibus possimus sint, dolorum laborum sed reprehenderit velit, cum suscipit laudantium quia? Quibusdam autem totam sint iste est.</span><a href="#" class="btn btn-link">Ver más</a></p>
-  </div>
  
-  <div class="col-xs-12">
-    <h4 class="media-heading text-justify">Una pequeña reseña de mi nuevo libro</h4>
-    <h5 class="text-warning">23 de Abril 2016 - <small class="text-danger">Parra Toledo Araceli </small></h5>
-    <p class="text-justify"><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quisquam, placeat dolore minus beatae sed. Sapiente inventore mollitia, autem temporibus velit dolore, repudiandae voluptates quo facilis non a facere veniam maiores.</span>
-    <span>Rerum maiores deleniti quas corrupti id repellat consequatur quos? Voluptatibus at quidem sint tempora illum optio molestiae totam dolore, unde provident libero aliquam, beatae assumenda itaque error quasi blanditiis minima.</span>
-    <span>Alias asperiores, eos reprehenderit. Repudiandae sequi dolorum laudantium, corporis ipsam impedit incidunt veritatis officiis, harum ea animi excepturi consectetur iure tenetur assumenda delectus amet nisi dolorem! Culpa illo iusto eum.</span><span>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste consectetur, mollitia, minima necessitatibus possimus sint, dolorum laborum sed reprehenderit velit, cum suscipit laudantium quia? Quibusdam autem totam sint iste est.</span><a href="#" class="btn btn-link">Ver más</a></p>
-  </div>
-</div>
             </div>
             <div class="col-lg-3">
                 <h3 class="media-heading">Publicaciones</h3>
@@ -93,6 +95,6 @@ get_header();
     <br>
     <br>
     <br>
-   
 
- <?php get_footer(); ?>
+<?php
+get_footer(); ?>
