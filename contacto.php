@@ -53,18 +53,18 @@ get_header();
                 <form>
                     <div class="form-group">
                         <label for="nombre">Nombre Completo:</label>
-                        <input type="nombre" class="form-control" id="nombre" placeholder="Saul Salomon Ramirez Zuñiga">
+                        <input type="nombre" class="form-control" id="nombre" name="nombre" placeholder="Saul Salomon Ramirez Zuñiga">
                     </div>
                     <div class="form-group">
                         <label for="correo">Correo:</label>
-                        <input type="correo" class="form-control" id="correo" placeholder="ejemplo@gmail.com">
+                        <input type="correo" class="form-control" id="correo" name="correo" placeholder="ejemplo@gmail.com">
                     </div>
                     <div class="form-group">
                         <label for="estudio">Tema del mensaje:</label>
-                        <input type="estudio" class="form-control" id="estudio" placeholder="Sugerencias">
+                        <input type="estudio" class="form-control" id="estudio" name="estudio" placeholder="Sugerencias">
                     </div>
                     <label for="texto">Escribe tu opinion:</label>
-                    <textarea class="form-control" rows="3" placeholder="Escribe algo que quieras compartir o que nos quieras decir"></textarea>
+                    <textarea name="opinion" class="form-control" rows="3" placeholder="Escribe algo que quieras compartir o que nos quieras decir"></textarea>
                     <br>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
