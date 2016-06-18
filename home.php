@@ -1,6 +1,6 @@
 <?php
-get_header();
-the_post(); //Pueda recibir los posts. 
+  get_header();
+  the_post(); 
 ?>
     <header class="container">
        <div class="row">
@@ -17,8 +17,11 @@ the_post(); //Pueda recibir los posts.
     </header>
     
     <br><br><br>
-
-<div id="noticias">
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+             <div id="publicaciones">
                 <?php
                 $args = array(
                   'post_type' =>'post',
@@ -33,11 +36,6 @@ the_post(); //Pueda recibir los posts.
 
                       <!-- the loop -->
                        <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
-
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-9">
                 <div class="media">
   <div class="col-sm-3 col-md-3 col-xs-12">
     <a href="#">
@@ -47,22 +45,27 @@ the_post(); //Pueda recibir los posts.
   <div class="col-sm-1"></div>
   <div class="col-sm-8 col-md-9 col-xs-12">
     <h4 class="text-justify"><?php the_title(); ?></h4>
-    <h5 class="text-warning"><?php echo get_the_date(); ?><small class="text-danger"><?php the_author(); ?></small></h5>
-    <?php the_excerpt(); ?>
-    <div class=" col-lg-offset-10"><a href="<?php the_permalink();?>"><buttom class="btn btn-link">Ver más</buttom></a></div>
+     <h5 class="text-warning"><?php echo get_the_date(); ?> - <small class="text-danger"><?php the_author(); ?></small></h5>
+    <p class="text-justify"><span><?php the_excerpt(); ?></span><a href="<?php the_permalink();?>" class="btn btn-link">Ver más</a></p>
   </div>
+  
+  <br>
+  <br>
+  <br>
+</div>
+            <?php endwhile; ?>
+                           <!-- end of the loop -->
 
-  <?php endwhile; ?>
-  <?php wp_reset_postdata(); ?>
-  <?php else : ?>
-    <p><?php _e('Lo sentimos, no se encontro el Post.'); ?></p>
-  <?php endif; ?>
-  <br>
-  </div>
-  <br>
-  <br>
- 
+                            <!-- pagination here -->
+
+                             <?php wp_reset_postdata(); ?>
+
+                              <?php else : ?>
+                                  <p><?php _e( 'Lo sentimos, no se encontró el post. :(' ); ?></p>
+                                <?php endif; ?>
+                                <br>
             </div>
+      </div>
             <div class="col-lg-3">
                 <h3 class="media-heading">Publicaciones</h3>
                 
@@ -90,11 +93,10 @@ the_post(); //Pueda recibir los posts.
                 </ul>
             </div>
         </div>
-    </div>
-    
+    </div>  
     <br>
     <br>
     <br>
-
 <?php
-get_footer(); ?>
+  get_footer(); 
+?>
