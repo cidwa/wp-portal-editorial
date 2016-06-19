@@ -39,7 +39,7 @@
                 <div class="media">
   <div class="col-sm-3 col-md-3 col-xs-12">
     <a href="#">
-      <img class="media-object" src="<?php echo get_template_directory_uri();?>img/blog-1.jpg" alt="Bootstrap" class="img img-responsive">
+      <?php the_post_thumbnail(); ?>
     </a>
   </div>
   <div class="col-sm-1"></div>
