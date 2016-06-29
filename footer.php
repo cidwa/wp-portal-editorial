@@ -1,3 +1,4 @@
+<!--Esto es footer.php-->
 <footer class="container-fluid">
         <div class="row aire">
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">

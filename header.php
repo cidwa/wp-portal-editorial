@@ -9,7 +9,7 @@
 </head>
 <body <?php body_class(); ?>>
 
-
+        <!--Esto es header.php-->
 
         <?php get_template_part("partes/menu"); ?>
 

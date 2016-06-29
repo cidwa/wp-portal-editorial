@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+    <!--Esto es contacto.php-->
     <div class="container">
         <div class="row">
            <h2 class="media-heading">Contacto</h2>    

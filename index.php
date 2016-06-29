@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-
+    <!--Esto es index.php-->
     <div id="conteiner">
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
            

@@ -2,6 +2,7 @@
   get_header();
   the_post(); 
 ?>
+    <!--Esto es home.php-->
     <header class="container">
        <div class="row">
            <div class="col-lg-12">

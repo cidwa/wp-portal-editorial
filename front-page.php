@@ -1,6 +1,7 @@
 <?php
 get_header();
 ?>
+    <!--Esto es front-page.php-->
     <!--Slider de Diego-->
     <div class="container">
         <section class="row">
