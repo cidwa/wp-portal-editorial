@@ -3,9 +3,9 @@
 
 
     <div id="conteiner">
-           <!-- estamos en single.php -->
+           <!-- estamos en single-evento.php -->
 
-        <h2>single.php</h2>
+        <h2>single-evento.php</h2>
 
 
 
@@ -20,7 +20,7 @@
 
                         <?php if(has_post_thumbnail() ): ?>
                             <div class="imagen-post-thumbnail">
-                                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img')); ?>
+                                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
 
                             </div>
                             <?php endif; ?>

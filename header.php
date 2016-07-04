@@ -16,11 +16,12 @@
         <div class="container">
             <div title="Logo" class="row">
                 <div class="col-sm-6 col-xs-10 col-md-5">
-                    <img src="img/Fes-Acatlan.png" alt="" class="img img-responsive">
+                    <img src="http://localhost:8080/wp-content/uploads/2016/07/Fes-Acatlan.png" alt="" class="img img-responsive">
+                    
                 </div>
                 <div class="col-sm-5 col-md-6"></div>
                 <div class="col-sm-1 col-xs-2 super col-md-1">
-                    <img src="img/ediciones-actlan.png" alt="" class="img img-responsive">
+                    <img src="http://localhost:8080/wp-content/uploads/2016/07/ediciones-actlan.png" alt="" class="img img-responsive">
                 </div>
             </div>
         </div>

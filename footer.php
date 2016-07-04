@@ -4,8 +4,8 @@
                 <!--Columna 2-->
                 <h4>Lineamiento</h4>
                 <ul>
-                    <li class="espli">&gt; <a href="comite-editorial-interno.html">Comite Editorial interno</a></li>
-                    <li class="espli">&gt; <a href="comite-editorial.html">Comite editorial</a></li>
+                    <li class="espli">&gt; <a href=" http://localhost:8080/comite-editorial-interno">Comite Editorial interno</a></li>
+                    <li class="espli">&gt; <a href=" http://localhost:8080/comite-editorial/">Comite editorial</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
