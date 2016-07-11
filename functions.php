@@ -3,7 +3,7 @@
 function cargar_css_del_tema(){
 
     wp_enqueue_style("bootstrap", get_stylesheet_directory_uri(). "/css/bootstrap.min.css");
-    wp_enqueue_style("style", get_stylesheet_directory_uri(). "/style.css");
+
     wp_enqueue_style("style_footer",get_stylesheet_directory_uri(). '/css/style_footer.css' );
     wp_enqueue_style("style_body2", get_stylesheet_directory_uri(). '/css/style_body2.css' );
     wp_enqueue_style("style_body4", get_stylesheet_directory_uri(). '/css/style_body4.css' );
@@ -11,6 +11,8 @@ function cargar_css_del_tema(){
     wp_enqueue_style("styles_slider", get_stylesheet_directory_uri(). '/css/styles_slider.css' );
     wp_enqueue_style("styles-header", get_stylesheet_directory_uri(). "/css/styles-header.css" );
     wp_enqueue_style("light", get_stylesheet_directory_uri(). "/css/light.css" );
+        wp_enqueue_style("style",get_stylesheet_directory_uri(). '/css/style.css' );
+
 }
 
 add_action('wp_enqueue_scripts','cargar_css_del_tema');
@@ -25,8 +27,29 @@ function cargar_js_del_tema(){
     wp_enqueue_script("pdfobject", get_stylesheet_directory_uri()."/js/pdfobject.js");
     wp_enqueue_script("pdfobject1", get_stylesheet_directory_uri()."/js/pdfobject.min.js");
     wp_enqueue_script("typed", get_stylesheet_directory_uri()."/js/typed.js");
+    
+    wp_enqueue_script("pdfobject", get_stylesheet_directory_uri()."/js/pdfobject.min.js");
+    wp_register_script("pdf-portal", get_stylesheet_directory_uri()."/js/pdf-portal.js");
+    wp_register_script("pdf-portal-2", get_stylesheet_directory_uri()."/js/pdf-portal-2.js");
+
+    if( is_page( 'comite-editorial-interno') ){
+            wp_enqueue_script("pdf-portal");
+    }
+    else
+        if( is_page('comite-editorial') ){
+
+            wp_enqueue_script("pdf-portal-2");
+
+        }
+
+    
+        
+
 }
 add_action("wp_enqueue_scripts","cargar_js_del_tema");
+
+
+
 
 
 
@@ -60,6 +83,7 @@ add_action( 'after_setup_theme', 'my_theme_setup' );
 
 add_image_size( 'imagen-libro', 192.5, 265, true );
 
+add_image_size( 'imagen-pdf', 30,30, true );
 
     
 
@@ -173,13 +197,6 @@ add_action( 'init', 'crear_tipo_de_evento');
     'post_type'       => 'evento'
 
 ); 
-
-
-
-
-
-
-
 
 
 

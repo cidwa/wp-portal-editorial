@@ -1,9 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
 
-
-<body>
-    
     <div id="pdf_view">
         <div id="pdf1"></div>
         <div id="cerrar">
@@ -12,98 +7,17 @@
         </div>
     </div>
 
-    <header>
-        <div class="container-fluid super visible-lg-block visible-md-block">
-            <nav class="navbar navbar-inverse top-links navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header collapsed navbar-toggle text-center icono-collaps">
+    <?php get_header(); ?>
 
-                        <!--<a class="navbar-brand" href="#">Libros</a>-->
-                    </div>
-                    <div class="collapse navbar-collapse nav-stacked" id="bs-example-navbar-collapse-1" aria-expanded="true">
-
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="container">
-            <div title="Logo" class="row">
-                <div class="col-sm-6 col-xs-10 col-md-5">
-                    <img src="img/Fes-Acatlan.png" alt="" class="img img-responsive">
-                </div>
-                <div class="col-sm-5 col-md-6"></div>
-                <div class="col-sm-1 col-xs-2 super col-md-1">
-                    <img src="img/ediciones-actlan.png" alt="" class="img img-responsive">
-                </div>
-            </div>
-        </div>
-        <!--//Primer menu de navegación por Cairo -->
-        <br>
-        <!--Walter segundo menu-->
-        <div class="container">
-            <nav class="navbar navbar-default navbar-principal ">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="  search-query form-control" placeholder="Buscar en la tienda" />
-                        <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="navbar-collapse collapse nav-menu-principal">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">NUESTROS LIBROS</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ÁREA <span class="glyphicon glyphicon-chevron-down"></span></a>
-
-                            <ul class="dropdown-menu collapse">
-                                <li><a href="#">> Estudios de Posgrado</a></li>
-                                <li><a href="#">> Ciencias Juridicas</a></li>
-                                <li><a href="#">> Diseño y Edificación</a></li>
-                                <li><a href="#">> Matematicas e Ingenieria</a></li>
-                                <li><a href="#">> Enseñanza de Idiomas</a></li>
-                                <li><a href="#">> Investigación Aplicada y Multidiciplinaria</a></li>
-                                <li class="active"><a href="area-tematica.html">> Ciencias Socioeconómicas</a></li>
-                                <li><a href="#">> Humanidades</a></li>
-                                <li><a href="#">> Universidad Abierta y Educación a Distancia</a></li>
-                                <li><a href="#">> Divulgacion Cientifica</a></li>
-
-
-                            </ul>
-                        </li>
-                        <li><a href="#">E-BOOKS</a></li>
-                        <li><a href="eventos.html">EVENTOS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-        <!--//Walter segundo menu-->
-    </header>
 
     <div class="container" data-example-id="collapse-accordion">
        
          <div >
 
             <h2 id="lineamiento-header">Lineamientos Comité </h2>
-            <a id="lineamientos" onclick="mostrar()" ><img  src="img/pdf.png" alt="Smiley face" height="30" width="30"></a>
+            <a id="lineamientos" onclick="mostrar()" ><img  src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
             
-            <a id="lineamientos-2" img href="pdf/lineamientos.pdf" target="_blank" ><img src="img/pdf.png" alt="Smiley face" height="30" width="30"></a>
+            <a id="lineamientos-2" img  target="_blank" ><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
 
            
 
@@ -394,81 +308,9 @@
             </div>
         </div>
     </div>
-    <!--footer start-->
-    <footer class="container-fluid">
-        <div class="row aire">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 2-->
-                <h4>Lineamiento</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="comite-editorial-interno.html">Comite Editorial interno</a></li>
-                    <li class="espli">&gt; <a href="comite-editorial.html">Comite editorial</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 3-->
-                <h4>Integración</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="integracion.html">Integración</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 4-->
-                <h4>Sistema</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="http://sistemas.acatlan.unam.mx/publicaciones/">Sistema</a></li>
-
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <aside>
-                    <h4>Siguenos en:</h4>
-                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="img/facebook.png" width=32 height=32 /></a>
-
-                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
-
-                </aside>
-            </div>
-
-        </div>
-    </footer>
-
-    <div class="container-fluid">
-        <div class="row footer2">
+ 
 
 
-            <p class="text-center">Hecho en México, todos los derechos reservados 2016. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución. <a href="creditos.html">Créditos</a></p>
-            <div class="footer3">
-                <p class="text-center">Sitio Web Administrado por el Departamento de Servicio de Computo</p>
-            </div>
+ <?php get_footer(); ?>
 
 
-        </div>
-    </div>
-
-    <script>
-        var options = {
-            page: 2
-            , pdfOpenParams: {
-                navpanes: 1
-                , view: "FitH"
-                , pagemode: "thumbs"
-            }
-        };
-        PDFObject.embed("/pdf/lineamientos.pdf", "#pdf1", options);
-    </script>
-
-    <script>
-        function ocultar() {
-            document.getElementById("pdf_view").style.visibility = "hidden";
-        }
-    </script>
-    <script>
-        function mostrar() {
-            document.getElementById("pdf_view").style.visibility = "visible";
-        }
-    </script>
-
-</body>
-
-</html>

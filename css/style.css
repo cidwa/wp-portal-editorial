@@ -16,17 +16,17 @@
 }*/
 
 a:link {
-    color: #909090;
+    color: #337ab7;
     text-decoration: none;
 }
 
 a:visited {
-    color: #909090;
+    color: #337ab7;
     text-decoration: none;
 }
 
 ul li a:hover {
-    color: #cb0404;
+    color: #337ab7;
     transition-duration: .5s;
     text-decoration: none;
 }
@@ -71,19 +71,16 @@ ul li a:hover {
 
 
 
+
 /** stilos para comite-editorial.html*/
-div.panel-default >div.panel-heading {
-    padding: 0 !important;
-}
 
 div.panel-default >div.panel-heading >h4 {
     width: inherit;
-    height: inherit;
     padding: 0px !important;
 }
 
 div.panel-default >div.panel-heading >h4>a {
-    padding: 10px !important;
+    padding: 0px !important;
     display: block;
     color: #337ab7;
 }
@@ -118,4 +115,3 @@ div.panel-default >div.panel-collapse >div.panel-body > p {
 .lista-con-espacio >li {
     margin-left: 4%;
 }
-/** stilos para comite-editorial.html*/
