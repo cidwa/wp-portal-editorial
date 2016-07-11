@@ -17,8 +17,9 @@
             <h2 id="lineamiento-header">Lineamientos Comité </h2>
             <a id="lineamientos" onclick="mostrar()" ><img  src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
             
-            <a id="lineamientos-2" img  target="_blank" ><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
-
+            
+          
+            <a id="lineamientos-2" img href="http://localhost:8080/wp-content/uploads/2016/07/Lineamientos_Comite.pdf" target="_blank" ><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
            
 
 

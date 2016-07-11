@@ -23,7 +23,8 @@
                 <img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30">
             </a>
 
-            <a id="lineamientos-2" img  target="_blank"><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
+
+            <a id="lineamientos-2" img href="http://localhost:8080/wp-content/uploads/2016/07/lineamientos.pdf" target="_blank" ><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
 
 
 
