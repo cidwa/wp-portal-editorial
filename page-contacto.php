@@ -1,6 +1,5 @@
-<?php
+<?php 
     get_header();
-    the_post();
     /*Template Name: Formulario*/
 
 ?>
@@ -8,10 +7,10 @@
 
     <div class="container">
         <div class="row">
-           <h2 class="media-heading">Contacto</h2>    
+           <h2 class="media-heading"><?php the_title(); ?></h2>  
+           <?php the_content(); ?>  
         </div>
         <br>
-
     </div>
     <section class="container">
         <div class="row">
@@ -97,4 +96,5 @@
     </section>
     <br>
     <br>
-    <?php get_footer(); ?>
+
+<?php get_footer(); ?>
