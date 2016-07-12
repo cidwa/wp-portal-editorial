@@ -1,100 +1,10 @@
-<!DOCTYPE html>
-<html lang="en">
+<?php
+    get_header();
+    the_post();
+    /*Template Name: Formulario*/
 
-
-<body>
-
-
-
-    <header>
-        <div class="container-fluid super visible-lg-block visible-md-block">
-            <nav class="navbar navbar-inverse top-links navbar-default">
-                <div class="container-fluid">
-                    <div class="navbar-header collapsed navbar-toggle text-center icono-collaps">
-
-
-                    </div>
-                    <div class="collapse navbar-collapse nav-stacked" id="bs-example-navbar-collapse-1" aria-expanded="true">
-
-
-                    </div>
-                </div>
-            </nav>
-        </div>
-
-
-        <div class="container">
-            <div title="Logo" class="row">
-                <div class="col-sm-6 col-xs-10 col-md-5">
-                    <img src="img/Fes-Acatlan.png" alt="" class="img img-responsive">
-                </div>
-                <div class="col-sm-5 col-md-6"></div>
-                <div class="col-sm-1 col-xs-2 super col-md-1">
-                    <img src="img/ediciones-actlan.png" alt="" class="img img-responsive">
-                </div>
-            </div>
-        </div>
-
-        <!--//Primer menu de navegación por Cairo -->
-        <br>
-        <!--Walter segundo menu-->
-        <div class="container">
-            <nav class="navbar navbar-default navbar-principal ">
-
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
-                <div id="custom-search-input">
-                    <div class="input-group col-md-12">
-                        <input type="text" class="  search-query form-control" placeholder="Buscar en la tienda" />
-                        <span class="input-group-btn">
-                                    <button class="btn btn-danger" type="button">
-                                        <span class=" glyphicon glyphicon-search"></span>
-                        </button>
-                        </span>
-                    </div>
-                </div>
-
-                <div class="navbar-collapse collapse nav-menu-principal">
-                    <ul class="nav navbar-nav">
-                        <li><a href="index.html">NUESTROS LIBROS</a></li>
-
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" role="button" aria-haspopup="true" aria-expanded="false">ÁREA <span class="glyphicon glyphicon-chevron-down"></span></a>
-
-                            <ul class="dropdown-menu collapse">
-                                <li><a href="#">> Estudios de Posgrado</a></li>
-                                <li><a href="#">> Ciencias Juridicas</a></li>
-                                <li><a href="#">> Diseño y Edificación</a></li>
-                                <li><a href="#">> Matematicas e Ingenieria</a></li>
-                                <li><a href="#">> Enseñanza de Idiomas</a></li>
-                                <li><a href="#">> Investigación Aplicada y Multidiciplinaria</a></li>
-                                <li><a href="area-tematica.html">> Ciencias Socioeconómicas</a></li>
-                                <li><a href="#">> Humanidades</a></li>
-                                <li><a href="#">> Universidad Abierta y Educación a Distancia</a></li>
-                                <li><a href="#">> Divulgacion Cientifica</a></li>
-
-
-                            </ul>
-                        </li>
-                        <li><a href="#">E-BOOKS</a></li>
-                        <li><a href="eventos.html">EVENTOS</a></li>
-                        <li><a href="blog.html">BLOG</a></li>
-                        <li class="active"><a href="contacto.html">CONTACTO</a></li>
-                    </ul>
-
-                </div>
-            </nav>
-        </div>
-        <!--//Walter segundo menu-->
-    </header>
-
-
-
+?>
+    <!--Formulario-->
 
     <div class="container">
         <div class="row">
@@ -145,21 +55,21 @@
         <div class="row">
 
             <div class="col-lg-8">
-                <form>
+                <form action="#" method="post" class="contacto">
                     <div class="form-group">
                         <label for="nombre">Nombre Completo:</label>
-                        <input type="nombre" class="form-control" id="nombre" placeholder="Saul Salomon Ramirez Zuñiga">
+                        <input type="nombre" name="nombre"  class="form-control" id="nombre" placeholder="Saul Salomon Ramirez Zuñiga">
                     </div>
                     <div class="form-group">
                         <label for="correo">Correo:</label>
-                        <input type="correo" class="form-control" id="correo" placeholder="ejemplo@gmail.com">
+                        <input type="correo" name="correo" class="form-control" id="correo" placeholder="ejemplo@gmail.com">
                     </div>
                     <div class="form-group">
                         <label for="estudio">Tema del mensaje:</label>
-                        <input type="estudio" class="form-control" id="estudio" placeholder="Sugerencias">
+                        <input type="tema" name="tema" class="form-control" id="estudio" placeholder="Sugerencias">
                     </div>
                     <label for="texto">Escribe tu opinion:</label>
-                    <textarea class="form-control" rows="3" placeholder="Escribe algo que quieras compartir o que nos quieras decir"></textarea>
+                    <textarea name="opinion" class="form-control" rows="3" placeholder="Escribe algo que quieras compartir o que nos quieras decir"></textarea>
                     <br>
                     <button type="submit" class="btn btn-primary">Enviar</button>
                 </form>
@@ -187,58 +97,4 @@
     </section>
     <br>
     <br>
-    <footer class="container-fluid">
-        <div class="row aire">
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 2-->
-                <h4>Lineamiento</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="comite-editorial-interno.html">Comite Editorial interno</a></li>
-                    <li class="espli">&gt; <a href="comite-editorial.html">Comite editorial</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 3-->
-                <h4>Integración</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="integracion.html">Integración</a></li>
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <!--Columna 4-->
-                <h4>Sistema</h4>
-                <ul>
-                    <li class="espli">&gt; <a href="http://sistemas.acatlan.unam.mx/publicaciones/">Sistema</a></li>
-
-                </ul>
-            </div>
-            <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">
-                <aside>
-                    <h4>Siguenos en:</h4>
-                    <a href="https://www.facebook.com/" target="_blank"><img alt="Siguenos en Facebook" src="img/facebook.png" width=32 height=32 /></a>
-
-                    <a href="https://twitter.com/EdicionAcatlan" target="_blank"><img src="img/twitter.png" width=32 height=32 alt="Síguenos en Twitter" /></a>
-
-                </aside>
-            </div>
-
-        </div>
-    </footer>
-
-    <div class="container-fluid">
-        <div class="row footer2">
-
-
-            <p class="text-center">Hecho en México, todos los derechos reservados 2016. Esta página puede ser reproducida con fines no lucrativos, siempre y cuando no se mutile, se cite la fuente completa y su dirección electrónica. De otra forma, requiere permiso previo por escrito de la institución. <a href="creditos.html">Créditos</a></p>
-            <div class="footer3">
-                <p class="text-center">Sitio Web Administrado por el Departamento de Servicio de Computo</p>
-            </div>
-
-
-        </div>
-    </div>
-
-
-</body>
-
-</html>
+    <?php get_footer(); ?>
