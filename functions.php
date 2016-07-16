@@ -68,13 +68,23 @@ function registrar_mis_menus(){
 add_action('init','registrar_mis_menus');
 
 
-    
+//Este faltaba
+add_filter('body_class','add_body_class');
+function add_body_class($classes)
+  {
+    global $post;
+    if (isset($post)) {
+      $classes[]= $post->post_name;
+    }
+    return $classes;
+  }
+  add_filter('body_class', 'add_body_class');
 
 
 
-
-add_theme_support("menus");
-
+//el de abajao ya estaba repetido arriba
+//add_theme_support("menus"); 
+ 
 
 function my_theme_setup() {
   add_theme_support( 'post-thumbnails' );
@@ -92,12 +102,11 @@ add_image_size( 'imagen-pdf', 30,30, true );
 // Register Custom Post Type
 function crear_eventos() {
 
-	$labels = array(
-		'name'                  => _x( 'evento', 'Post Type General Name', 'text_domain' ),
-		'singular_name'         => _x( 'evento', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'evento', 'text_domain' ),
-		'name_admin_bar'        => __( 'eventos', 'text_domain' ),
-		'archives'              => __( 'Item Archives', 'text_domain' ),
+	$labels = array(					//agrege una s al 'name' y con mayusculas al inicio el resto
+		'name'                  => _x( 'Eventos', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'Evento', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Evento', 'text_domain' ),
+		'name_admin_bar'        => __( 'Eventos', 'text_domain' ),
 		'parent_item_colon'     => __( 'Evento superior', 'text_domain' ),
 		'all_items'             => __( 'Todos los eventos', 'text_domain' ),
 		'add_new_item'          => __( 'nuevo', 'text_domain' ),
@@ -130,7 +139,7 @@ function crear_eventos() {
 		'publicly_queryable'    => true,
 		'capability_type'       => 'page',
 	);
-	register_post_type( 'evento', $args );
+	register_post_type( 'eventos', $args ); //agrege una "s"
 
 }
 add_action( 'init', 'crear_eventos', 0 );
@@ -175,7 +184,7 @@ function crear_tipo_de_evento() {
 		'show_tagcloud'              => true,
         'rewrite'                    => array('alug'=>'tipo_de_evento')
 	);
-	register_taxonomy( 'tipo_de_evento', array( 'evento' ), $args );
+	register_taxonomy( 'tipo_de_evento', array( 'eventos' ), $args ); //igual lo puse en singular
 
 }
 add_action( 'init', 'crear_tipo_de_evento');
@@ -194,7 +203,7 @@ add_action( 'init', 'crear_tipo_de_evento');
 	'show_post_count' => true,
 	'echo'            => 1,
 	'order'           => 'DESC',
-    'post_type'       => 'evento'
+    'post_type'       => 'eventos'
 
 ); 
 
