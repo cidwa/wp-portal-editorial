@@ -19,7 +19,7 @@ get_header();
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img src="slider/assets/1.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/slider/assets/1.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -27,7 +27,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="slider/assets/2.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/slider/assets/2.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -35,7 +35,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="slider/assets/3.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/slider/assets/3.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -43,7 +43,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="slider/assets/4.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/slider/assets/4.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -51,7 +51,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img src="slider/assets/5.jpg" alt="">
+                                <img src="<?php echo get_template_directory_uri();?>/slider/assets/5.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
