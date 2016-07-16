@@ -141,7 +141,7 @@ get_header();
             </div>
             <div class="row noticias">
 
-                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12	">
+                <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
                     <div class="thumbnail">
                         <div id="uno" class="imagen">
                             <div class="mask">
@@ -198,5 +198,7 @@ get_header();
                 </div>
 
             </div>
+        </div>
+    </div>
 
  <?php get_footer(); ?>
