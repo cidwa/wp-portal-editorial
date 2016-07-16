@@ -102,11 +102,20 @@ add_image_size( 'imagen-pdf', 30,30, true );
 // Register Custom Post Type
 function crear_eventos() {
 
+<<<<<<< HEAD
 	$labels = array(					//agrege una s al 'name' y con mayusculas al inicio el resto
 		'name'                  => _x( 'Eventos', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'Evento', 'Post Type Singular Name', 'text_domain' ),
 		'menu_name'             => __( 'Evento', 'text_domain' ),
 		'name_admin_bar'        => __( 'Eventos', 'text_domain' ),
+=======
+	$labels = array(
+		'name'                  => _x( 'Eventos', 'Post Type General Name', 'text_domain' ),
+		'singular_name'         => _x( 'evento', 'Post Type Singular Name', 'text_domain' ),
+		'menu_name'             => __( 'Evento', 'text_domain' ),
+		'name_admin_bar'        => __( 'Eventos', 'text_domain' ),
+		'archives'              => __( 'Item Archives', 'text_domain' ),
+>>>>>>> 04ceb372404d2b95bb3d2c8b231a1d4d8f0568a8
 		'parent_item_colon'     => __( 'Evento superior', 'text_domain' ),
 		'all_items'             => __( 'Todos los eventos', 'text_domain' ),
 		'add_new_item'          => __( 'nuevo', 'text_domain' ),
