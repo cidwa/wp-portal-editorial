@@ -1,5 +1,7 @@
-<?php get_header(); ?>
-
+<?php
+    get_header();
+    the_post();
+?>
 
     <!--estamos en page-eventos.php-->
     <h2>estamos en page-eventos.php</h2>
@@ -19,16 +21,14 @@
             <img src="http://www.libros.unam.mx/media//NOVEDADES.jpg" alt="" class="img img-responsive">
         </div>
         <?php
-                   
-                    
-                    $the_query = new WP_Query( array(
-                        'post_type' => 'evento',
-                        'post_per_page'=> '-1',
-                        'tag' =>'EVENTO'
-                    
-                    ) );
+            $args = array(
+                'post_type' => 'eventos',
+                'posts_per_page' => '-1',
+                'tag' =>'EVENTO',
+            );     
+            $the_query = new WP_Query($args); ?>
 
-                    if ( $the_query->have_posts() ) : while ($the_query->have_posts()) : $the_query->the_post(); ?>
+            <?php  if ( $the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post(); ?>
 
 
 
@@ -85,4 +85,4 @@
 
 
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

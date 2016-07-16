@@ -1,5 +1,6 @@
 <?php 
     get_header();
+    the_post();
     /*Template Name: Formulario*/
 
 ?>

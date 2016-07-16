@@ -1,10 +1,11 @@
-<?php get_header(); ?>
+<?php 
+    get_header(); 
+    the_post();
+?>
 
 
     <!--estamos en page.php-->
     <h2>estamos en page.php</h2>
-
-
 
     <div class="container">
         <section>

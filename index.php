@@ -8,7 +8,7 @@ get_header();
 
     <!--//Slider de Diego-->
     
-<!---- Primera parte ---->
+<!-- Primera parte -->
  <div class="container">
         <div class="col-md-12">
             <div class=" titulo row">
@@ -133,7 +133,7 @@ get_header();
     </div>
   
 
-    <!----------------Ultimas noticia ------------------>
+    <!--Ultimas noticia -->
     <div class="container">
         <div class="col-md-12">
             <div class=" titulo row">
@@ -198,5 +198,5 @@ get_header();
                 </div>
 
             </div>
- <!----Para cuando este el footer--->   
+
  <?php get_footer(); ?>
