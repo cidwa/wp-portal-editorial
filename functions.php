@@ -93,10 +93,10 @@ add_image_size( 'imagen-pdf', 30,30, true );
 function crear_eventos() {
 
 	$labels = array(
-		'name'                  => _x( 'evento', 'Post Type General Name', 'text_domain' ),
+		'name'                  => _x( 'Eventos', 'Post Type General Name', 'text_domain' ),
 		'singular_name'         => _x( 'evento', 'Post Type Singular Name', 'text_domain' ),
-		'menu_name'             => __( 'evento', 'text_domain' ),
-		'name_admin_bar'        => __( 'eventos', 'text_domain' ),
+		'menu_name'             => __( 'Evento', 'text_domain' ),
+		'name_admin_bar'        => __( 'Eventos', 'text_domain' ),
 		'archives'              => __( 'Item Archives', 'text_domain' ),
 		'parent_item_colon'     => __( 'Evento superior', 'text_domain' ),
 		'all_items'             => __( 'Todos los eventos', 'text_domain' ),
