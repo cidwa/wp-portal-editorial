@@ -6,8 +6,6 @@ get_header();
           <h2>estamos en index.php</h2>
                 <!--estamos en index.php-->
 
-<<<<<<< HEAD
-=======
 <!--//Slider de Diego-->
 <div class="container">
         <section class="row">
@@ -82,8 +80,7 @@ get_header();
         </section>
     </div>
     <!--//Slider de Diego-->
-    
->>>>>>> 2114737168b889d7a5bdcf696c36d3aae7beff49
+
 <!-- Primera parte -->
  <div class="container">
         <div class="col-md-12">
