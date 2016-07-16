@@ -16,12 +16,12 @@
         <div class="container">
             <div title="Logo" class="row">
                 <div class="col-sm-6 col-xs-10 col-md-5">
-                    <img src="img/Fes-Acatlan.png" alt="" class="img img-responsive">
+                    <img src="<?php echo get_template_directory_uri();?>/img/Fes-Acatlan.png" alt="" class="img img-responsive">
                     
                 </div>
                 <div class="col-sm-5 col-md-6"></div>
                 <div class="col-sm-1 col-xs-2 super col-md-1">
-                    <img src="img/ediciones-actlan.png" alt="" class="img img-responsive">
+                    <img src="<?php echo get_template_directory_uri();?>/img/ediciones-actlan.png" alt="" class="img img-responsive">
                 </div>
             </div>
         </div>
