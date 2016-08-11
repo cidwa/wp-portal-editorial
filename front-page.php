@@ -78,31 +78,7 @@ get_header();
         </section>
     </div>
     <!--//Slider de Diego-->
-    <div class="container espacio">
-        <div class="row">
-            <div class="col-lg-4 col-md-4 col-xs-12 ">
-                <div class="fondo1">
-                    <div class="margen">
-                        <h2>NOVEDADES</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="fondo2">
-                    <div class="margen">
-                        <h2>LIBROS DEL MES</h2>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-4 col-md-4 col-xs-12">
-                <div class="fondo3">
-                    <div class="margen">
-                        <h2>EVENTOS</h2>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
+    
 <!--Primera parte -->
  <div class="container">
         <div class="col-md-12">
@@ -293,5 +269,9 @@ get_header();
                 </div>
 
             </div>
+
+
+        </div>
+    </div>
  <!----Para cuando este el footer--->   
  <?php get_footer(); ?>

@@ -95,6 +95,7 @@ add_image_size( 'imagen-libro', 192.5, 265, true );
 
 add_image_size( 'imagen-pdf', 30,30, true );
 
+
     
 
 
@@ -206,6 +207,8 @@ add_action( 'init', 'crear_tipo_de_evento');
     'post_type'       => 'eventos'
 
 ); 
+
+
 
 
 

@@ -17,7 +17,7 @@
                 <div class="col-md-12">
 
                     <?php $the_query = new WP_Query( array(
-                        'post_type' => 'evento',
+                        'post_type' => 'eventos',
                         'post_per_page'=> '-1',
                     
                     ) );
