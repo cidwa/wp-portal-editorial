@@ -48,7 +48,7 @@
                 <div class="col-sm-4">
                     <h3>Informacion</h3>
                     <p><strong>Fechas: </strong> <?php echo get_post_meta($post->ID,'Fechas',true); ?></p>
-                    <p><strong>Horario:</strong> <?php echo get_post_meta($post->ID,'Horario',true); ?></p>
+                    <p><strong>Horario:</strong> <?php echo get_post_meta($post->ID,'Horarios',true); ?></p>
                     <p><strong>Entrada: </strong> <?php echo get_post_meta($post->ID,'Entrada',true); ?></p>
                     <a href="http://www.libros.unam.mx/ventasespecial"><?php echo get_post_meta($post->ID,'Link',true); ?></a>
                 </div>
