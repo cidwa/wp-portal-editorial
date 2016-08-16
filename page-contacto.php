@@ -77,7 +77,7 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="thumbnail">
-                        <a href="http://derecho.posgrado.unam.mx/congresos/CurIntActDerAdmin/imgs/mapa100.PNG" target="_blank"> <img src="img/croquis.PNG" alt="..." class="img img-responsive"></a>
+                        <a href="http://derecho.posgrado.unam.mx/congresos/CurIntActDerAdmin/imgs/mapa100.PNG" target="_blank"> <img src="<?php echo get_template_directory_uri();?>/img/croquis.PNG" alt="..." class="img img-responsive"></a>
                         <div class="caption">
                             <h3>Croquis</h3>
                             <p>Este croquis es una vez llegando a la FES ACATLAN</p>
