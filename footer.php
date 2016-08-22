@@ -12,7 +12,7 @@
                 <!--Columna 3-->
                 <h4>Integración</h4>
                 <ul>
-                    <li class="espli">&gt; <a href="integracion.html">Integración</a></li>
+                    <li class="espli">&gt; <a href="http://localhost:8080/integracion/">Integración</a></li>
                 </ul>
             </div>
             <div class="col-lg-3 col-md-3 col-sm-3 col-xs-12">

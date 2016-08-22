@@ -31,6 +31,8 @@ function cargar_js_del_tema(){
     wp_enqueue_script("pdfobject", get_stylesheet_directory_uri()."/js/pdfobject.min.js");
     wp_register_script("pdf-portal", get_stylesheet_directory_uri()."/js/pdf-portal.js");
     wp_register_script("pdf-portal-2", get_stylesheet_directory_uri()."/js/pdf-portal-2.js");
+    wp_register_script("pdf-portal-3", get_stylesheet_directory_uri()."/js/pdf-portal-3.js");
+
 
     if( is_page( 'comite-editorial-interno') ){
             wp_enqueue_script("pdf-portal");
@@ -41,6 +43,10 @@ function cargar_js_del_tema(){
             wp_enqueue_script("pdf-portal-2");
 
         }
+    else{
+            wp_enqueue_script("pdf-portal-3");
+
+    }
 
     
         
@@ -183,7 +189,7 @@ function crear_tipo_de_evento() {
 		'show_admin_column'          => true,
 		'show_in_nav_menus'          => true,
 		'show_tagcloud'              => true,
-        'rewrite'                    => array('alug'=>'tipo_de_evento')
+        'rewrite'                    => array('slug'=>'tipo_de_evento')
 	);
 	register_taxonomy( 'tipo_de_evento', array( 'eventos' ), $args ); //igual lo puse en singular
 
@@ -196,7 +202,7 @@ add_action( 'init', 'crear_tipo_de_evento');
 
 
  $vector = array(
-	'type'            => 'monthly',
+	'type'            => 'yearly',
 	'limit'           => '12',
 	'format'          => 'custom',
 	'before'          => '<ul class="list-group" style="margin-bottom: 0px ;"><li class="list-group-item">',
@@ -207,8 +213,6 @@ add_action( 'init', 'crear_tipo_de_evento');
     'post_type'       => 'eventos'
 
 ); 
-
-
 
 
 

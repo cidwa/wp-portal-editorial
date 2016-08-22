@@ -1,3 +1,6 @@
+body{
+    padding-top: 190px;
+}
 * {
     margin: 0;
     padding: 0;
@@ -65,11 +68,8 @@ ul li a:hover {
 }
 
 .espacio-bl .row {
-    margin-top: 100px;
+    margin-top: 10px;
 }
-
-
-
 
 
 /** stilos para comite-editorial.html*/
@@ -114,4 +114,28 @@ div.panel-default >div.panel-collapse >div.panel-body > p {
 
 .lista-con-espacio >li {
     margin-left: 4%;
+}
+
+.img-evento {
+    display: block;
+    max-width: 80%;
+    height: 300px;
+}
+
+#header-div {
+    position: fixed;
+    z-index: 10000;
+    background-color: white;
+    width: 100%;
+    top: 30px;
+    padding-top: 10px;
+}
+
+
+
+@media (max-width: 780px) {
+    #header-img-logo{
+        display: none;
+        visibility: hidden;
+    }
 }

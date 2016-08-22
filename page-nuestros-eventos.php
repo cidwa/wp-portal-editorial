@@ -38,7 +38,7 @@
 
                     <?php if(has_post_thumbnail() ): ?>
                         <div class="imagen-post-thumbnail">
-                            <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
+                            <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-evento')); ?>
 
                         </div>
                         <?php endif; ?>

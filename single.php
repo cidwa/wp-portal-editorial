@@ -1,11 +1,21 @@
+<div id="pdf_view">
+    <div id="pdf3"></div>
+    <div id="cerrar">
+        <button onclick="ocultar()" type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove "></span>
+        </button>
+    </div>
+</div>
+
+
+
 <?php get_header(); ?>
 
 
 
     <div id="conteiner">
-           <!-- estamos en single.php -->
+        <!-- estamos en single.php -->
 
-        <h2>single.php</h2>
+        <h2>single1.php</h2>
 
 
 
@@ -20,7 +30,7 @@
 
                         <?php if(has_post_thumbnail() ): ?>
                             <div class="imagen-post-thumbnail">
-                                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img')); ?>
+                                <?php the_post_thumbnail('post-thumbnail', array('class' => 'img-responsive')); ?>
 
                             </div>
                             <?php endif; ?>
@@ -28,14 +38,15 @@
                     </div>
                     <div class="col-lg-7 col-md-7 col-sm-6 col-xs-12">
                         <h1><?php the_title(); ?></h1>
-                        <p>Disponibilidad: <small>En existencia</small></p>
+                        <p>Disponibilidad: <small><?php echo get_post_meta($post->ID,'Disponibilidad',true); ?></small></p>
                         <p>Mira otros productos de Dirección General de Publicaciones y Fomento Editorial</p>
-                        <p><strong>Autor:</strong> Parra Toledo Araceli</p>
-                        <p><strong>Tamaño:</strong> 16 X 19 cm</p>
-                        <p><strong>ISBN/ISSN:</strong> 978-607-027-686-6</p>
+                        <p><strong>Autor:</strong> <?php echo get_post_meta($post->ID,'Autor',true); ?></p>
+                        <p><strong>Tamaño:</strong> <?php echo get_post_meta($post->ID,'Tamaño',true); ?></p>
+                        <p><strong>ISBN/ISSN:</strong> <?php echo get_post_meta($post->ID,'ISBN/ISSN',true); ?></p>
+                      
                         <div class="row">
                             <div class="col-lg-2">
-                                <img src="img/libro.jpg" alt="libros">
+                                <img src="http://localhost:8080/wp-content/uploads/2016/08/libro.jpg" alt="libros">
                             </div>
                             <div class="col-lg-9">
                                 <h2><strong>Libro Impreso</strong></h2>
@@ -52,9 +63,26 @@
                         <div class="col-sm-12">
 
                             <div class="col-md-4 col-sm-6 col-xs-12 ">
-                                <a href="pdf/gobernanza.pdf" target="_blank">
-                                    <button class="btn btn-primary"><span></span>Ver muestra gratis</button>
+                                <a  id="previsualizacion-libro1" target="_blank">
+                                   
+                                    
+                                    <?php $a= get_post_meta($post->ID,'Vermuestragratis',true); ?>
+                                    <?php echo $a ?>
+                                    <button onclick="mostrar('<?php echo $a?>')" class="btn btn-primary"><span></span>                                    <?php echo $b ?>                     
+
+
+                                    </button>
                                 </a>
+                                
+                                
+                                
+                                
+                                <a id="previsualizacion-libro2"  href="http://localhost:8080/wp-content/uploads/2016/08/Tira-de-Materias.pdf" target="_blank" >
+                                    <button  class="btn btn-primary"><span></span>Ver muestra gratis</button>
+                                </a>
+
+                            
+
                             </div>
                             <div class="col-md-4 col-sm-6 col-xs-12 ">
                                 <a href="http://www.libros.unam.mx/area-tematica/ciencias-sociales/derecho/la-lengua-del-derecho-y-el-derecho-de-la-lengua-direccion-general-de-publicaciones-y-fomento-editorial.html">

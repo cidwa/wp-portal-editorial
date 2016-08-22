@@ -2,38 +2,40 @@
 
 
     <!--estamos en archive.php-->
-    <h2>estamos en archive1.php</h2>
+    <h2>estamos en archive.php</h2>
 
 
 
-
-
-
-
-
-<div class="container">
+    <div class="container">
         <section>
 
-            <div class="col-lg-9 col-md-9 col-sm-8">
+            <div class="col-lg-9 col-md-9 col-sm-9">
                 <div class="page-tittle">
-                    <h1>Ciencias Socioeconómicas</h1>
                 </div>
                 <div class="col-md-12">
                     <img src="http://www.libros.unam.mx/media//NOVEDADES.jpg" alt="" class="img img-responsive">
                 </div>
                 <div class="col-md-12">
-                    <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+<?php
+            $args = array(
+                'post_type' => 'eventos',
+                'posts_per_page' => '-1',
+                'tag' =>'ebook',
+            );     
+            $the_query = new WP_Query($args); ?>
+
+            <?php  if ( $the_query->have_posts()): while ($the_query->have_posts()): $the_query->the_post(); ?>
+
 
                         <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                             <a href="<?php the_permalink() ?>" data-toggle="tooltip" title="<?php the_title(); ?>" data-placement="bottom">
-                               
-                                
-                                 <?php
+                            <a href="caracteres.html" data-toggle="tooltip" title="<?php the_title(); ?>" data-placement="bottom">
+                    
+                    <?php
                     if ( has_post_thumbnail() ) {
                          the_post_thumbnail('imagen-libro');
                     }?>
-                                
-                            </a>                        
+                </a>
+
                             <div class="col-md-12" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
                                 <p class="text-center">
                                     <a href="<?php the_permalink() ?>">
@@ -42,13 +44,15 @@
                                 </p>
 
                             </div>
-                            
-                            
-                            
+
+
+
                             <div class="col-md-12">
                                 <p class="text-center" style="font-weight: bold;">MXN$ 250</p>
                             </div>
                         </div>
+
+
 
 
 
@@ -63,11 +67,8 @@
                                 <h2>Not Found</h2>
 
                                 <?php endif; ?>
-                                
-                                
 
                 </div>
-                
             </div>
             <br>
             <br>
@@ -75,10 +76,10 @@
 
 
 
-             <div class="col-lg-3 col-md-3 col-sm-4">
+            <div class="col-lg-3">
                 <h3 class="media-heading">Publicaciones</h3>
 
-                                     <?php wp_get_archives( $vector ); ?>
+                     <?php wp_get_archives( $vector ); ?>
 
             </div>
         </section>
@@ -86,8 +87,14 @@
         <br>
         <br>
     </div>
-    
-   
+
+
+
+
+
+
+
+
+
 
     <?php get_footer(); ?>
-

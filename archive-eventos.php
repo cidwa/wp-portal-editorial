@@ -2,7 +2,7 @@
 
 
     <!--estamos en archive.php-->
-    <h2>estamos en archive.php</h2>
+    <h2>estamos en archive-eventos.php</h2>
 
 
 
@@ -70,10 +70,11 @@
 
 
 
-            <div class="col-lg-3">
+            
+             <div class="col-lg-3 col-md-3 col-sm-4">
                 <h3 class="media-heading">Publicaciones</h3>
 
-                     <?php wp_get_archives( $vector ); ?>
+                                     <?php wp_get_archives( $vector ); ?>
 
             </div>
         </section>
