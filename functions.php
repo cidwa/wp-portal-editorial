@@ -97,7 +97,6 @@ function my_theme_setup() {
 }
 add_action( 'after_setup_theme', 'my_theme_setup' );
 
-add_image_size( 'imagen-libro', 192.5, 265, true );
 
 add_image_size( 'imagen-pdf', 30,30, true );
 

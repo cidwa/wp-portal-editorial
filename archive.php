@@ -6,7 +6,18 @@
 
 
 
-
+<div class="breadcrumb">
+<?php
+if (class_exists('breadcrumb_navigation_xt')) {
+// Display a prefix
+echo 'Navigation: ';
+// new breadcrumb object
+$mybreadcrumb = new breadcrumb_navigation_xt;
+// Display the breadcrumb
+$mybreadcrumb->display();
+}
+?>
+</div> <!-- [breadcrumb] -->
 
 
 
@@ -18,39 +29,47 @@
                 <div class="page-tittle">
                     <h1>Ciencias Socioeconómicas</h1>
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <img src="http://www.libros.unam.mx/media//NOVEDADES.jpg" alt="" class="img img-responsive">
                 </div>
-                <div class="col-md-12">
+                <div class="col-md-12 ">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
                              <a href="<?php the_permalink() ?>" data-toggle="tooltip" title="<?php the_title(); ?>" data-placement="bottom">
                                
-                                
-                                 <?php
+                               
+                                     <?php
                     if ( has_post_thumbnail() ) {
-                         the_post_thumbnail('imagen-libro');
+                         the_post_thumbnail('img img-responsive');
                     }?>
                                 
+                                
+                                
                             </a>                        
-                            <div class="col-md-12" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
-                                <p class="text-center">
-                                    <a href="<?php the_permalink() ?>">
-                                        <?php the_title(); ?>
-                                    </a>
-                                </p>
+                            <div class="col-md-12 col-sm-6 col-xs-12" style="overflow: hidden; text-overflow: ellipsis;">
+                               <h4 class="text-center subtitulo"><?php the_title(); ?></h4>
 
                             </div>
                             
                             
+                            <div class="col-md-12 col-sm-6 col-xs-12">
+                            <p class="text-center" >MXN$ 250</p>
+                        </div>
                             
-                            <div class="col-md-12">
-                                <p class="text-center" style="font-weight: bold;">MXN$ 250</p>
-                            </div>
                         </div>
 
 
+                        
+ 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 
                         <?php endwhile; ?>
 

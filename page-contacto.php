@@ -76,23 +76,14 @@
             </div>
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="thumbnail">
-                        <a href="http://derecho.posgrado.unam.mx/congresos/CurIntActDerAdmin/imgs/mapa100.PNG" target="_blank"> <img src="<?php echo get_template_directory_uri();?>/img/croquis.PNG" alt="..." class="img img-responsive"></a>
-                        <div class="caption">
-                            <h3>Croquis</h3>
-                            <p>Este croquis es una vez llegando a la FES ACATLAN</p>
-                        </div>
-                    </div>
+                    
                 </div>
             </div>
         </div>
         <br>
         <br>
         <br>
-<div class="col-lg-12">
-                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3761.3374991860273!2d-99.248562885889!3d19.484110286855095!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d2039fbdc5a7b3%3A0xc950aed67b794f8f!2sFES+Acatl%C3%A1n!5e0!3m2!1ses-419!2smx!4v1459319997548" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
 
-            </div>
 
     </section>
     <br>

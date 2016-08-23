@@ -40,10 +40,16 @@
                         <h1><?php the_title(); ?></h1>
                         <p>Disponibilidad: <small><?php echo get_post_meta($post->ID,'Disponibilidad',true); ?></small></p>
                         <p>Mira otros productos de Dirección General de Publicaciones y Fomento Editorial</p>
-                        <p><strong>Autor:</strong> <?php echo get_post_meta($post->ID,'Autor',true); ?></p>
-                        <p><strong>Tamaño:</strong> <?php echo get_post_meta($post->ID,'Tamaño',true); ?></p>
-                        <p><strong>ISBN/ISSN:</strong> <?php echo get_post_meta($post->ID,'ISBN/ISSN',true); ?></p>
-                      
+                        <p><strong>Autor:</strong>
+                            <?php echo get_post_meta($post->ID,'Autor',true); ?>
+                        </p>
+                        <p><strong>Tamaño:</strong>
+                            <?php echo get_post_meta($post->ID,'Tamaño',true); ?>
+                        </p>
+                        <p><strong>ISBN/ISSN:</strong>
+                            <?php echo get_post_meta($post->ID,'ISBN/ISSN',true); ?>
+                        </p>
+
                         <div class="row">
                             <div class="col-lg-2">
                                 <img src="http://localhost:8080/wp-content/uploads/2016/08/libro.jpg" alt="libros">
@@ -63,27 +69,32 @@
                         <div class="col-sm-12">
 
                             <div class="col-md-4 col-sm-6 col-xs-12 ">
-                                <a  id="previsualizacion-libro1" target="_blank">
-                                   
-                                    
-                                    <?php $a= get_post_meta($post->ID,'Vermuestragratis',true); ?>
-                                    <?php echo $a ?>
-                                    <button onclick="mostrar('<?php echo $a?>')" class="btn btn-primary"><span></span>                                    <?php echo $b ?>                     
-
-
-                                    </button>
-                                </a>
-                                
-                                
-                                
-                                
-                                <a id="previsualizacion-libro2"  href="http://localhost:8080/wp-content/uploads/2016/08/Tira-de-Materias.pdf" target="_blank" >
+                                <a id="lineamientos" onclick="mostrar('<?php echo get_post_meta($post->ID,'Vermuestragratis',true); ?>')" style="float:none;" >
                                     <button  class="btn btn-primary"><span></span>Ver muestra gratis</button>
                                 </a>
+                               
+                                
+                                 <a id="lineamientos-2"    target="_blank" href="<?php echo get_post_meta($post->ID,'Vermuestragratis',true); ?>" style="float:none;"><button  class="btn btn-primary"><span></span>Ver muestra gratis</button>
+                                </a>
+
+                            </div>
+
+
+
+
+
 
                             
 
-                            </div>
+
+
+
+
+
+
+
+
+
                             <div class="col-md-4 col-sm-6 col-xs-12 ">
                                 <a href="http://www.libros.unam.mx/area-tematica/ciencias-sociales/derecho/la-lengua-del-derecho-y-el-derecho-de-la-lengua-direccion-general-de-publicaciones-y-fomento-editorial.html">
                                     <button class="btn btn-primary"><span></span>$250.00 Comprar</button>

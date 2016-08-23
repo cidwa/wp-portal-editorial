@@ -12,7 +12,18 @@
 
 
 
-
+<div class="breadcrumb">
+<?php
+if (class_exists('breadcrumb_navigation_xt')) {
+// Display a prefix
+echo 'Navigation: ';
+// new breadcrumb object
+$mybreadcrumb = new breadcrumb_navigation_xt;
+// Display the breadcrumb
+$mybreadcrumb->display();
+}
+?>
+</div> <!-- [breadcrumb] -->
 
     <div class="container" data-example-id="collapse-accordion">
 

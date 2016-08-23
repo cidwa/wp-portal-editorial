@@ -15,40 +15,42 @@
                 <div class="col-md-12">
                     <img src="http://www.libros.unam.mx/media//NOVEDADES.jpg" alt="" class="img img-responsive">
                 </div>
-                <div class="col-md-12">
-
+                <div class="col-md-12 ">
                     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-
-
-                        <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
-                            <a href="caracteres.html" data-toggle="tooltip" title="<?php the_title(); ?>" data-placement="bottom">
-                    
-                    <?php
+                        <div class="col-lg-4 col-sm-6 col-xs-12">
+                             <a href="<?php the_permalink() ?>" data-toggle="tooltip" title="<?php the_title(); ?>" data-placement="bottom">
+                               
+                               
+                                     <?php
                     if ( has_post_thumbnail() ) {
-                         the_post_thumbnail('imagen-libro');
+                         the_post_thumbnail('img img-responsive');
                     }?>
-                </a>
-
-                            <div class="col-md-12" style="overflow: hidden; white-space: nowrap; text-overflow: ellipsis;">
-                                <p class="text-center">
-                                    <a href="<?php the_permalink() ?>">
-                                        <?php the_title(); ?>
-                                    </a>
-                                </p>
+                                
+                                
+                                
+                            </a>                        
+                             <div class="col-md-12 col-sm-12 col-xs-12" style="overflow: hidden; text-overflow: ellipsis;">
+                                <a href="<?php the_permalink() ?>" style="color:#504f4f;">
+                                     <h4 class="text-center subtitulo"  ><?php the_title(); ?></h4>
+                            <p class="text-center" >MXN$ 250</p>
+                                </a>
 
                             </div>
-
-
-
-                            <div class="col-md-12">
-                                <p class="text-center" style="font-weight: bold;">MXN$ 250</p>
-                            </div>
+                            
                         </div>
 
 
-
-
+                        
+ 
+                        
+                        
+                        
+                        
+                        
+                        
+                        
+                        
 
                         <?php endwhile; ?>
 
@@ -61,6 +63,8 @@
                                 <h2>Not Found</h2>
 
                                 <?php endif; ?>
+                                
+                                
 
                 </div>
             </div>
