@@ -9,7 +9,7 @@ get_header();
    <div class="container">
         <section class="row">
             <div class="col-sm-4" style="padding-left:50px;">
-                <img id="header-img-logo" src="http://localhost:8080/wp-content/uploads/2016/07/ediciones-actlan.png" alt="logo" width="70%";  >
+                <img id="header-img-logo" src="<?php echo get_template_directory_uri();?>/img/ediciones-actlan-2.png" alt="Edicion Acatlan" width="70%";  >
             </div>
             <div class=" col-sm-1"></div>
 
@@ -27,7 +27,7 @@ get_header();
                         </ol>
                         <div class="carousel-inner" role="listbox">
                             <div class="item active">
-                                <img class="first-slide" src="http://localhost:8080/wp-content/uploads/2016/08/1.jpg" alt="Tema">
+                                <img class="first-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/1.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -35,7 +35,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="second-slide" src="http://localhost:8080/wp-content/uploads/2016/08/2.jpg" alt="Pollo">
+                                <img class="second-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/2.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -43,7 +43,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="http://localhost:8080/wp-content/uploads/2016/08/3.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/3.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -51,7 +51,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="http://localhost:8080/wp-content/uploads/2016/08/4.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/4.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -59,7 +59,7 @@ get_header();
                                 </div>
                             </div>
                             <div class="item">
-                                <img class="third-slide" src="http://localhost:8080/wp-content/uploads/2016/08/5.jpg" alt="Pescado">
+                                <img class="third-slide" src="<?php echo get_template_directory_uri();?>/slider/assets/5.jpg" alt="">
                                 <div class="container">
                                     <div class="carousel-caption">
 
@@ -83,6 +83,8 @@ get_header();
 
         </section>
     </div>
+    <br>
+  
     <!--//Slider de Diego-->
 
     <!--Empieza la sección de Bryan-->
@@ -180,14 +182,14 @@ get_header();
         </div>
         <div class="col-md-6">
             <div class=" titulo row">
-                <h3 class="col-md-10 col-sm-10 col-xs-8">Últimas noticias</h3>
+                <h3 class="col-md-10 col-sm-10 col-xs-8">Noticias del mes</h3>
                 <div class="col-md-2 col-sm-2 col-xs-4">
-                    <a href="#" class="jncarousel-control-prev">&lsaquo;</a>
-                    <a href="#" class="jncarousel-control-next">&rsaquo;</a>
+                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
                 </div>
             </div>
             <div class="row">
-                <div class="jncarousel">
+                <div class="jcarousel">
                     <ul>
                         <li class="col-xs-6 col-sm-4 col-md-3">
                             <div class="thumbnail">
@@ -268,6 +270,8 @@ get_header();
                 </div>
             </div>
         </div>
+      
+      
       <!--  <div class="col-md-6">
             <div class=" titulo row">
                 <h3>Últimas noticias</h3>

@@ -5,19 +5,11 @@
 
 ?>
     <!--Formulario-->
-
-    <div class="container">
-        <div class="row">
-           <h2 class="media-heading"><?php the_title(); ?></h2>  
-           <?php the_content(); ?>  
-        </div>
-        <br>
-    </div>
     <section class="container">
-        <div class="row">
-            <div class="col-lg-12">
-
-                <div class="col-md-4">
+        
+            <div class="col-xs-12">
+                 <h2 class="media-heading"><?php the_title(); ?></h2>  
+                <div class="col-md-4 col-sm-6">
                     <h3>Direccion</h3>
                     <br>
                     <span class="glyphicon glyphicon-flag btn-lg col-xs-1"></span>
@@ -27,7 +19,7 @@
                         <li>Naucalpan de Juarez, México</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <h3>Telefonos</h3>
                     <br>
                     <span class="glyphicon glyphicon-earphone btn-lg col-xs-1"></span>
@@ -36,7 +28,7 @@
                         <li>01800-50-10-400</li>
                     </ul>
                 </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-sm-6">
                     <h3>Correo</h3>
                     <span class="glyphicon glyphicon-envelope btn-lg"></span>
                    
@@ -47,14 +39,21 @@
 
                 <br>
             </div>
-        </div>
+       
         <br>
         <br>
+        <br><br>
 
 
-        <div class="row">
+    </section>
+    
+    <br>
+    <br>
+<div class="container">
+    
+        <div class="col-xs-12">
 
-            <div class="col-lg-8">
+            <div class="col-sm-8 col-xs-12">
                 <form action="#" method="post" class="contacto">
                     <div class="form-group">
                         <label for="nombre">Nombre Completo:</label>
@@ -80,13 +79,5 @@
                 </div>
             </div>
         </div>
-        <br>
-        <br>
-        <br>
-
-
-    </section>
-    <br>
-    <br>
-
+</div>
 <?php get_footer(); ?>
