@@ -2,34 +2,17 @@
 
 
     <!--estamos en archive.php-->
-    <h2>estamos en archive.php</h2>
+    <h2>estamos en archive-ebooks.php</h2>
 
 
 
-<div class="breadcrumb">
-<?php
-if (class_exists('breadcrumb_navigation_xt')) {
-// Display a prefix
-echo 'Navigation: ';
-// new breadcrumb object
-$mybreadcrumb = new breadcrumb_navigation_xt;
-// Display the breadcrumb
-$mybreadcrumb->display();
-}
-?>
-</div> <!-- [breadcrumb] -->
-
-
-
-
-<div class="container">
+    <div class="container">
         <section>
 
-            <div class="col-lg-9 col-md-9 col-sm-8">
+            <div class="col-lg-9 col-md-9 col-sm-9">
                 <div class="page-tittle">
-                    <h1>Ciencias Socioeconómicas</h1>
                 </div>
-                <div class="col-md-12 ">
+                <div class="col-md-12">
                     <img src="http://www.libros.unam.mx/media//NOVEDADES.jpg" alt="" class="img img-responsive">
                 </div>
                 <div class="col-md-12 ">
@@ -47,15 +30,13 @@ $mybreadcrumb->display();
                                 
                                 
                             </a>                        
-                            <div class="col-md-12 col-sm-6 col-xs-12" style="overflow: hidden; text-overflow: ellipsis;">
-                               <h4 class="text-center subtitulo"><?php the_title(); ?></h4>
+                             <div class="col-md-12 col-sm-12 col-xs-12" style="overflow: hidden; text-overflow: ellipsis;">
+                                <a href="<?php the_permalink() ?>" style="color:#504f4f;">
+                                     <h4 class="text-center subtitulo"  ><?php the_title(); ?></h4>
+                            <p class="text-center" >MXN$ 250</p>
+                                </a>
 
                             </div>
-                            
-                            
-                            <div class="col-md-12 col-sm-6 col-xs-12">
-                            <p class="text-center" >MXN$ 250</p>
-                        </div>
                             
                         </div>
 
@@ -86,7 +67,6 @@ $mybreadcrumb->display();
                                 
 
                 </div>
-                
             </div>
             <br>
             <br>
@@ -94,10 +74,11 @@ $mybreadcrumb->display();
 
 
 
+            
              <div class="col-lg-3 col-md-3 col-sm-4">
                 <h3 class="media-heading">Publicaciones</h3>
 
-                                     <?php wp_get_archives( $vectoreventos ); ?>
+                                     <?php wp_get_archives( $vectorebooks ); ?>
 
             </div>
         </section>
@@ -105,8 +86,14 @@ $mybreadcrumb->display();
         <br>
         <br>
     </div>
-    
-   
+
+
+
+
+
+
+
+
+
 
     <?php get_footer(); ?>
-

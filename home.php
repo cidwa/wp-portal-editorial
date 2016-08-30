@@ -50,7 +50,7 @@
                                
                                      <?php
                     if ( has_post_thumbnail() ) {
-                         the_post_thumbnail('img-responsive');
+                         the_post_thumbnail('medium');
                     }?>
                                 
                                 
@@ -92,25 +92,7 @@
 
 
         <div class="col-md-3">
-            <h3 class="media-heading">Publicaciones</h3>
-
-            <ul class="list-group">
-                <li class="list-group-item">
-                    <span class="badge">1</span> Mayo 2016
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">3</span> Abril 2016
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">11</span> Marzo 2016
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">0</span> Febrero 2016
-                </li>
-                <li class="list-group-item">
-                    <span class="badge">5</span> Enero 2016
-                </li>
-            </ul>
+            
         </div>
     </div>
 

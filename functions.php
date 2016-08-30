@@ -327,7 +327,9 @@ function crear_tipo_de_ebook() {
 	register_taxonomy( 'tipo_de_ebook', array( 'ebooks' ), $args ); //igual lo puse en singular
 }
 add_action( 'init', 'crear_tipo_de_ebook');
- $vector = array(
+
+
+ $vectorebooks = array(
 	'type'            => 'yearly',
 	'limit'           => '12',
 	'format'          => 'custom',
@@ -338,6 +340,28 @@ add_action( 'init', 'crear_tipo_de_ebook');
 	'order'           => 'DESC',
     'post_type'       => 'ebooks'
 ); 
+
+$vectoreventos = array(
+	'type'            => 'yearly',
+	'limit'           => '12',
+	'format'          => 'custom',
+	'before'          => '<ul class="list-group" style="margin-bottom: 0px ;"><li class="list-group-item">',
+	'after'           => '</li></ul>',
+	'show_post_count' => true,
+	'echo'            => 1,
+	'order'           => 'DESC',
+    'post_type'       => 'eventos'
+); 
+
+
+add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);
+
+function special_nav_class ($classes, $item) {
+    if (in_array('current-menu-item', $classes) ){
+        $classes[] = 'active';
+    }
+    return $classes;
+}
 
 
 ?>

@@ -182,14 +182,14 @@ get_header();
         </div>
         <div class="col-md-6">
             <div class=" titulo row">
-                <h3 class="col-md-10 col-sm-10 col-xs-8">Noticias del mes</h3>
+                <h3 class="col-md-10 col-sm-10 col-xs-8">Eventos</h3>
                 <div class="col-md-2 col-sm-2 col-xs-4">
-                    <a href="#" class="jcarousel-control-prev">&lsaquo;</a>
-                    <a href="#" class="jcarousel-control-next">&rsaquo;</a>
+                    <a href="#" class="jncarousel-control-prev">&lsaquo;</a>
+                    <a href="#" class="jncarousel-control-next">&rsaquo;</a>
                 </div>
             </div>
             <div class="row">
-                <div class="jcarousel">
+                <div class="jncarousel">
                     <ul>
                         <li class="col-xs-6 col-sm-4 col-md-3">
                             <div class="thumbnail">
@@ -270,8 +270,6 @@ get_header();
                 </div>
             </div>
         </div>
-      
-      
       <!--  <div class="col-md-6">
             <div class=" titulo row">
                 <h3>Últimas noticias</h3>
