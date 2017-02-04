@@ -42,6 +42,7 @@ function cargar_js_del_tema(){
 add_action("wp_enqueue_scripts","cargar_js_del_tema");
 add_theme_support("menus");
 add_theme_support("post-thumbnails");
+add_theme_support('html5',array('searchform'));
  // Register custom navigation walker
 require_once('wp_bootstrap_navwalker.php');
 function registrar_mis_menus(){
@@ -252,6 +253,7 @@ add_action( 'init', 'crear_tipo_de_evento');
 // Register Custom Post Type E-BOOK
 
 
+
 function crear_ebooks() {
 	$labels = array(
 		'name'                  => _x( 'Ebooks', 'Post Type General Name', 'text_domain' ),
@@ -259,7 +261,7 @@ function crear_ebooks() {
 		'menu_name'             => __( 'Ebook', 'text_domain' ),
 		'name_admin_bar'        => __( 'Ebooks', 'text_domain' ),
 		'parent_item_colon'     => __( 'Ebook superior', 'text_domain' ),
-		'all_items'             => __( 'Todos los eventos', 'text_domain' ),
+		'all_items'             => __( 'Todos los Ebooks', 'text_domain' ),
 		'add_new_item'          => __( 'nuevo', 'text_domain' ),
 		'add_new'               => __( 'nuevo', 'text_domain' ),
 		'new_item'              => __( 'nuevo', 'text_domain' ),
@@ -272,7 +274,7 @@ function crear_ebooks() {
 		
 	);
 	$args = array(
-		'label'                 => __( 'ebook', 'text_domain' ),
+		'label'                 => __( 'ebooks', 'text_domain' ),
 		'description'           => __( 'Ebooks', 'text_domain' ),
 		'labels'                => $labels,
 		'supports'              => array('title', 'editor','thumbnail','slug','custom-fields' ),
@@ -329,29 +331,6 @@ function crear_tipo_de_ebook() {
 add_action( 'init', 'crear_tipo_de_ebook');
 
 
- $vectorebooks = array(
-	'type'            => 'yearly',
-	'limit'           => '12',
-	'format'          => 'custom',
-	'before'          => '<ul class="list-group" style="margin-bottom: 0px ;"><li class="list-group-item">',
-	'after'           => '</li></ul>',
-	'show_post_count' => true,
-	'echo'            => 1,
-	'order'           => 'DESC',
-    'post_type'       => 'ebooks'
-); 
-
-$vectoreventos = array(
-	'type'            => 'yearly',
-	'limit'           => '12',
-	'format'          => 'custom',
-	'before'          => '<ul class="list-group" style="margin-bottom: 0px ;"><li class="list-group-item">',
-	'after'           => '</li></ul>',
-	'show_post_count' => true,
-	'echo'            => 1,
-	'order'           => 'DESC',
-    'post_type'       => 'eventos'
-); 
 
 
 add_filter('nav_menu_css_class' , 'special_nav_class' , 10 , 2);

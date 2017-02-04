@@ -7,7 +7,7 @@
                 , pagemode: "thumbs"
             }
         };
-        PDFObject.embed("http://localhost:8080/wp-content/uploads/2016/07/lineamientos.pdf", "#pdf1", options);
+        PDFObject.embed("http://localhost/wp-content/uploads/2016/07/lineamientos.pdf", "#pdf1", options);
     
 
 

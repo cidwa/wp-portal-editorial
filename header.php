@@ -7,7 +7,9 @@
 
     <?php wp_head();?>
 </head>
-<body <?php body_class(); ?>>
+    <body <?php body_class(); ?>  >
+    
+    
 
 <div class="container-fluid"  id="header-div" >
     
@@ -28,14 +30,11 @@
         
         
         <br>
-        <div class="container">
+        <div class="container-fluid">
                     <?php get_template_part("partes/menu_2"); ?>
 
         </div>
 
 
 </div>
-       
-       
-
        

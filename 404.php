@@ -1,31 +1,30 @@
 <?php get_header(); ?>
+    <br>
+    <br>
+    <br>
 
-	<div class="col-sm-12 col-md-12 col-lg-12">
+    <div class="container">
+        <div class="row">
 
-		<div class="col-sm-12 col-md-12 col-lg-12">
+            <div class="col-lg-12 col-md-12 col-sm-12 ">
+                <div class="page-tittle">
+                    <div class="alert alert-danger" role="alert">
+                        <h1><?php _e( 'Error 404 - Página no encontrada :('); ?></h1>
+                    </div>
+                    <h4>
+                        <?php _e( 'La página que estás buscando, no fue encontrada, ¡vuelve a intentarlo otra vez!'); ?>
+                    </h4>
 
-			<main class="col-sm-12 col-md-12 col-lg-12">
+                </div>
+            </div>
+            
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+    </div>
 
-				<article>
 
-					<header>
 
-						<h1><?php _e( 'Error 404 - Página no encontrada :('); ?></h1>
-
-					</header>
-
-					<section>
-
-						<p><?php _e( 'La página que estás buscando, no fue encontrada, ¡vuelve a intentarlo otra vez!'); ?></p>
-
-					</section>
-
-				</article>
-
-			</main>
-
-		</div>
-
-	</div>
-
-<?php get_footer(); ?>
+    <?php get_footer(); ?>

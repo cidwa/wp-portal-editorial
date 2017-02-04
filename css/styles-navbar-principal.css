@@ -27,8 +27,12 @@ nav.navbar-principal > div {
 }
 
 div.nav-menu-principal >ul.navbar-nav>li>a {
-    color: #333;
+        color: #333;
 }
+div.nav-menu-principal >ul.navbar-nav>li.active>a {
+        color: #333;
+}
+
 div.nav-menu-principal >ul.navbar-nav>li {
     border-right: 1px solid #d4d3d3;
 }
@@ -141,7 +145,7 @@ input.form-control {
         color:black;
         font-weight: bold;
     }
-    
+   
 }
 
 @media (max-width: 1200px) {
@@ -198,4 +202,36 @@ input.form-control {
     div.nav-menu-principal >ul.navbar-nav > li.dropdown > a.dropdown-toggle >span {
         visibility: visible;
     }
+     nav.navbar-principal > div {
+    padding-left: 10px;
 }
+}
+
+
+/*Esto son para fijar el tamaño de los libros */
+.img-reduction{
+  display: block ;
+  max-width: 100%;
+  height: auto;
+}
+       
+@media screen and (min-width: 768px) {
+   .img-reduction{
+  display: block ;
+  max-width: 100%;
+  height: 310px ;
+}
+}
+ @media screen and (min-width: 992px) {
+   .img-reduction{
+  display: block ;
+  max-width: 100%;
+  height: 300px;
+}
+   
+}
+  /*hasta aquí son para fijar el tamaño de los libros */
+
+
+
+

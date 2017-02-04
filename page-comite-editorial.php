@@ -4,6 +4,9 @@
             <button onclick="ocultar()" type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove "></span>
             </button>
         </div>
+        <div id="container_close" onclick="ocultar()" >
+        
+    </div>
 </div>
 
 
@@ -12,30 +15,17 @@
 
 
 
-<div class="breadcrumb">
-<?php
-if (class_exists('breadcrumb_navigation_xt')) {
-// Display a prefix
-echo 'Navigation: ';
-// new breadcrumb object
-$mybreadcrumb = new breadcrumb_navigation_xt;
-// Display the breadcrumb
-$mybreadcrumb->display();
-}
-?>
-</div> <!-- [breadcrumb] -->
-
     <div class="container" data-example-id="collapse-accordion">
 
         <div>
 
             <h2 id="lineamiento-header">Lineamientos Editoriales </h2>
             <a id="lineamientos" onclick="mostrar()">
-                <img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30">
+                <img src="http://localhost/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30">
             </a>
 
 
-            <a id="lineamientos-2" img href="http://localhost:8080/wp-content/uploads/2016/07/lineamientos.pdf" target="_blank" ><img src="http://localhost:8080/wp-content/uploads/2016/07/pdf.png" alt="Smiley face" height="30" width="30"></a>
+            <a id="lineamientos-2" img href="<?php echo get_template_directory_uri();?>/css/lineamientos.pdf" target="_blank" ><img src="<?php echo get_template_directory_uri();?>/css/pdf.png" alt="Smiley face" height="30" width="30"></a>
 
 
 

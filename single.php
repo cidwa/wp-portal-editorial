@@ -4,6 +4,9 @@
         <button onclick="ocultar()" type="button" class="btn btn-danger btn-lg"><span class="glyphicon glyphicon-remove "></span>
         </button>
     </div>
+    <div id="container_close" onclick="ocultar()" >
+        
+    </div>
 </div>
 
 
@@ -52,7 +55,7 @@
 
                         <div class="row">
                             <div class="col-lg-2">
-                                <img src="http://localhost:8080/wp-content/uploads/2016/08/libro.jpg" alt="libros">
+                                <img src="<?php echo get_template_directory_uri();?>/css/libro.jpg" alt="libros">
                             </div>
                             <div class="col-lg-9">
                                 <h2><strong>Libro Impreso</strong></h2>
